@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://doeyorm04iy07"]
+
+[ext_resource type="Script" path="res://scripts/bush_1.gd" id="1_t8tv1"]
+[ext_resource type="Texture2D" uid="uid://blvdpgu57qsw3" path="res://assets/leaves.png" id="2_xkfrs"]
+
+[node name="Bush" type="Area2D"]
+position = Vector2(-7.00006, 1.00006)
+scale = Vector2(1.22823, 1.33612)
+script = ExtResource("1_t8tv1")
+
+[node name="CollisionShape2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(-192.881, 167.156)
+polygon = PackedVector2Array(-0.893738, 7.22948, -35.0893, -78.8406, -42.4169, -141.709, -40.7885, -182.125, 15.3899, -142.458, 20.2749, -238.257, 35.7444, -295.887, 65.0548, -265.95, 103.321, -200.836, 151.655, -282.879, 182.297, -210.565, 215.678, -271.937, 258.83, -332.56, 275.927, -262.207, 279.184, -199.339, 320.707, -233.018, 328.035, -178.383, 318.769, -81.8859, 392.355, -118.508, 429.807, -129.734, 418.89, -52.7859, 394.798, 7.22948)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("2_xkfrs")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

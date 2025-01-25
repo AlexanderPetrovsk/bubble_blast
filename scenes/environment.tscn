@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8vehcx4sscax"]
+
+[ext_resource type="PackedScene" uid="uid://d37d3fw4qntlb" path="res://scenes/environment/bush_2.tscn" id="2_avwsf"]
+[ext_resource type="PackedScene" uid="uid://drnlbsvt6idc5" path="res://scenes/environment/tree_1.tscn" id="3_daaa0"]
+[ext_resource type="PackedScene" uid="uid://cgcsul301apl0" path="res://scenes/environment/vines.tscn" id="4_vk6em"]
+[ext_resource type="PackedScene" uid="uid://c3f5dke5eqgwc" path="res://scenes/environment/leaves.tscn" id="5_ladtc"]
+[ext_resource type="PackedScene" uid="uid://d4fkrxw0gsqnk" path="res://scenes/environment/cloud.tscn" id="6_y867r"]
+
+[node name="Environment" type="Node2D"]
+position = Vector2(1089, 542)
+
+[node name="Bush3" parent="." instance=ExtResource("2_avwsf")]
+position = Vector2(-718, 232)
+rotation = 0.0126677
+scale = Vector2(0.780968, 0.780968)
+
+[node name="Tree3" parent="." instance=ExtResource("3_daaa0")]
+position = Vector2(-199, -374)
+scale = Vector2(0.794491, 0.794491)
+
+[node name="Tree4" parent="." instance=ExtResource("3_daaa0")]
+position = Vector2(3597, -309)
+scale = Vector2(1.00978, 1.00978)
+
+[node name="Vines2" parent="." instance=ExtResource("4_vk6em")]
+position = Vector2(2779, -282)
+
+[node name="Leaves3" parent="." instance=ExtResource("5_ladtc")]
+position = Vector2(351, 100)
+scale = Vector2(0.814705, 0.814705)
+
+[node name="Leaves4" parent="." instance=ExtResource("5_ladtc")]
+position = Vector2(4117, 366)
+scale = Vector2(0.751647, 0.751647)
+
+[node name="cloud" parent="." instance=ExtResource("6_y867r")]
+position = Vector2(1938, -371)

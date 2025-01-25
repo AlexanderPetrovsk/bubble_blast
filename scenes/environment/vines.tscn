@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgcsul301apl0"]
+
+[ext_resource type="Texture2D" uid="uid://ckqxo7v2wiq6e" path="res://assets/lines01.png" id="1_0wn54"]
+
+[node name="Vines" type="Area2D"]
+position = Vector2(1369, -295)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(3, -6)
+scale = Vector2(1, 1.4)
+texture = ExtResource("1_0wn54")
