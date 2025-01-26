@@ -1,4 +1,4 @@
-[gd_scene load_steps=233 format=3 uid="uid://djb3td85854b3"]
+[gd_scene load_steps=229 format=3 uid="uid://djb3td85854b3"]
 
 [ext_resource type="Script" path="res://scripts/start_game.gd" id="1_uhy3d"]
 [ext_resource type="Texture2D" uid="uid://dqygk8b1wehhf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00000.png" id="2_e8jy2"]
@@ -173,7 +173,6 @@
 [ext_resource type="Texture2D" uid="uid://doum3jutnpqh8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00169.png" id="171_32de7"]
 [ext_resource type="Texture2D" uid="uid://tpvybl7ql4rq" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00170.png" id="172_x00jl"]
 [ext_resource type="Texture2D" uid="uid://dwm2luonu8mdk" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00171.png" id="173_3kqp0"]
-[ext_resource type="Texture2D" uid="uid://ubvb3qqldw5n" path="res://assets/Sun.png" id="173_6mrcp"]
 [ext_resource type="Texture2D" uid="uid://cdiv1c3wfr1wb" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00172.png" id="174_iimfh"]
 [ext_resource type="Texture2D" uid="uid://d287vtkpe6q7q" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00173.png" id="175_2ak0g"]
 [ext_resource type="Texture2D" uid="uid://bcnbfpsbdh2ql" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00174.png" id="176_5vdmc"]
@@ -915,43 +914,6 @@ animations = [{
 "speed": 60.0
 }]
 
-[sub_resource type="Animation" id="Animation_8rjmu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-627, -306)]
-}
-
-[sub_resource type="Animation" id="Animation_q4nqy"]
-resource_name = "sun"
-length = 2.8333
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.93333, 2.25, 2.5833, 2.833),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(900, -310), Vector2(890.827, -306), Vector2(-230.692, -306), Vector2(-627, -306), Vector2(-627, -306)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_m7yel"]
-_data = {
-"RESET": SubResource("Animation_8rjmu"),
-"sun": SubResource("Animation_q4nqy")
-}
-
 [node name="start_game" type="Node2D"]
 script = ExtResource("1_uhy3d")
 
@@ -963,20 +925,6 @@ scale = Vector2(0.788279, 0.788279)
 scale = Vector2(0.788279, 0.788279)
 sprite_frames = SubResource("SpriteFrames_68loo")
 autoplay = "default"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(-627, -306)
-texture = ExtResource("173_6mrcp")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
-deterministic = true
-root_node = NodePath("../../Node")
-libraries = {
-"": SubResource("AnimationLibrary_m7yel")
-}
-autoplay = "sun"
-playback_auto_capture_ease_type = 2
 
 [node name="Node" type="Node" parent="."]
 
