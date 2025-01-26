@@ -12,7 +12,7 @@ const end_scene_Y = 433
 var isReady = false
 
 var WIND_RESISTANCE = 150
-var WIND_VELOCITY = 2000.0
+var WIND_VELOCITY = 300.0
 
 var timeElapsed = 0
 var gitter = 0
@@ -49,6 +49,7 @@ var reachedEnd = false
 @onready var wind_up_right: AnimatedSprite2D = $bubble_anims/wind_up_right
 @onready var wind_down_left: AnimatedSprite2D = $bubble_anims/wind_down_left
 @onready var wind_down_right: AnimatedSprite2D = $bubble_anims/wind_down_right
+@onready var wind_empty: AnimatedSprite2D = $bubble_anims/wind_empty
 
 @onready var death: AudioStreamPlayer = $"../../sounds/death"
 @onready var background_music: AudioStreamPlayer = $"../../sounds/background_music"
@@ -118,36 +119,49 @@ func addAnimations():
 	pass
 
 func move_bubble():
-	var playingAnimation = null
+	var playingAnimation = wind_empty
+
+	body.rotation = 0
+	var animations = "empty_loop"
 
 	if Input.is_action_pressed("wind_left") and !Input.is_action_pressed("wind_down") and !Input.is_action_pressed("wind_up"):
 		velocity.x = WIND_VELOCITY
 		playingAnimation = wind_left
+		animations = "left"
 	if Input.is_action_pressed("wind_right") and !Input.is_action_pressed("wind_down") and !Input.is_action_pressed("wind_up"):
 		velocity.x = -WIND_VELOCITY
 		playingAnimation = wind_right
+		animations = "right"
 	if Input.is_action_pressed("wind_down"):
 		velocity.y = -WIND_VELOCITY
 		playingAnimation = wind_down
+		animations = "bottom"
 	if Input.is_action_pressed("wind_up"):
 		velocity.y = WIND_VELOCITY
 		playingAnimation = wind_up
+		animations = "top"
 	if Input.is_action_pressed("wind_up") and Input.is_action_pressed("wind_left"):
 		velocity.y = WIND_VELOCITY
 		velocity.x = WIND_VELOCITY
 		playingAnimation = wind_up_left
+		animations = "top_left"
 	if Input.is_action_pressed("wind_up") and Input.is_action_pressed("wind_right"):
 		velocity.y = WIND_VELOCITY
 		velocity.x = -WIND_VELOCITY
 		playingAnimation = wind_up_right
+		animations = "top_right"
 	if Input.is_action_pressed("wind_down") and Input.is_action_pressed("wind_left"):
 		velocity.y = -WIND_VELOCITY
 		velocity.x = WIND_VELOCITY
 		playingAnimation = wind_down_left
+		animations = "bottom_left"
 	if Input.is_action_pressed("wind_down") and Input.is_action_pressed("wind_right"):
 		velocity.y = -WIND_VELOCITY
 		velocity.x = -WIND_VELOCITY
 		playingAnimation = wind_down_right
+		animations = "bottom_right"
+	
+	body.play(animations)
 
 	if playingAnimation != null:
 		playingAnimation.play('default')
@@ -273,6 +287,7 @@ func _on_face_frame_changed() -> void:
 
 func play_empty_anim():
 	body.play('empty_start')
+
 func _on_body_frame_changed() -> void:
-	if body.animation == "empty_start" and body.frame == 19:
+	if body and body.animation == "empty_start" and body.frame == 19:
 		body.play("empty_loop")

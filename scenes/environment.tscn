@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://drnlbsvt6idc5" path="res://scenes/environment/tree_1.tscn" id="3_daaa0"]
 [ext_resource type="PackedScene" uid="uid://cgcsul301apl0" path="res://scenes/environment/vines.tscn" id="4_vk6em"]
 [ext_resource type="PackedScene" uid="uid://c3f5dke5eqgwc" path="res://scenes/environment/leaves.tscn" id="5_ladtc"]
-[ext_resource type="PackedScene" uid="uid://dsx8u51sxc0jp" path="res://scenes/environment/moss.tscn" id="6_0bud0"]
+[ext_resource type="PackedScene" path="res://scenes/environment/moss.tscn" id="6_0bud0"]
 [ext_resource type="PackedScene" uid="uid://d4fkrxw0gsqnk" path="res://scenes/environment/cloud.tscn" id="7_iw5pd"]
 [ext_resource type="PackedScene" uid="uid://cngg0y3pn3u2t" path="res://scenes/environment/animated/snake.tscn" id="8_y8x57"]
 
