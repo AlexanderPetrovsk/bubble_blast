@@ -917,16 +917,10 @@ animations = [{
 [node name="start_game" type="Node2D"]
 script = ExtResource("1_uhy3d")
 
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(758, -314)
-scale = Vector2(0.788279, 0.788279)
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.788279, 0.788279)
 sprite_frames = SubResource("SpriteFrames_68loo")
 autoplay = "default"
-
-[node name="Node" type="Node" parent="."]
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]

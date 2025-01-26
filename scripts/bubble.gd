@@ -5,10 +5,14 @@ const SPEED = 200.0
 const BUBBLE_SCALE_UP = 0.4
 const BUBBLE_SCALE_DOWN_RATE = 0
 
+const end_scene_X = 17159
+const end_scene_Y = 433
+
+
 var isReady = false
 
 var WIND_RESISTANCE = 150
-var WIND_VELOCITY = 200.0
+var WIND_VELOCITY = 2000.0
 
 var timeElapsed = 0
 var gitter = 0
@@ -18,7 +22,7 @@ var isInvincible = false
 var isRotating = false
 
 var hasDied = false
-
+var reachedEnd = false
 @onready var death_scene: Node2D = $"../../death_scene"
 
 @onready var camera = $Camera2D
@@ -28,6 +32,7 @@ var hasDied = false
 @onready var speedUpTimer = $SpeedUpTimer
 @onready var gravity_timer: Timer = $GravityTimer
 @onready var spinout_timer: Timer = $SpinoutTimer
+@onready var end_game_timer: Timer = $EndGameTimer
 
 @onready var collisionShape = $CollisionShape2D
 
@@ -43,15 +48,25 @@ var hasDied = false
 
 @onready var death: AudioStreamPlayer = $"../../sounds/death"
 @onready var background_music: AudioStreamPlayer = $"../../sounds/background_music"
+@onready var end_scene: Node2D = $"../../end_scene"
+
+@onready var bubble: CharacterBody2D = $"."
 
 func _physics_process(delta: float) -> void:
+	if reachedEnd:
+		return
+ 
+	if global_position.x >= 16300:
+		end_game(delta)
+		return
+
 	if isRotating:
 		var rotations = -6.2 * delta
 		bubble_anims.rotate(rotations)
 
 	if !isReady:
 		return
-
+		
 	if !background_music.playing:
 		playMusic()
 		
@@ -65,6 +80,7 @@ func _physics_process(delta: float) -> void:
 	elif face.animation == "angry": 
 		face.play("smile")
 
+		
 	if body.scale.x <= 0.35:
 		die()
 		return
@@ -144,6 +160,28 @@ func die():
 	#death_scene.visible = true
 	#death_scene.isActive = true
 	#face.play('die')
+	
+func end_game(delta):
+	velocity.x = 0
+	velocity.y = 0
+	
+	#if global_position.x < end_scene_X:
+		#position.x += 100 * delta * 2
+	#if global_position.x > end_scene_X:
+		#position.x -= 100 * delta * 2
+	#if global_position.y < end_scene_Y:
+		#position.y += 100 * delta * 2
+	#if global_position.y > end_scene_Y:
+		#position.y -= 100 * delta * 2
+	
+	var tween = create_tween()
+	tween.tween_property(self, 'global_position', Vector2(end_scene_X, end_scene_Y), 3)
+
+	end_game_timer.start()
+	reachedEnd = true
+
+func _on_end_game_timer_timeout() -> void:
+	end_scene.play("default")
 
 func invincibility():
 	isInvincible = true

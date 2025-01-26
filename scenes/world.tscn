@@ -1,17 +1,19 @@
-[gd_scene load_steps=14 format=3 uid="uid://cumo2r4785328"]
+[gd_scene load_steps=16 format=3 uid="uid://cumo2r4785328"]
 
 [ext_resource type="PackedScene" uid="uid://c8vehcx4sscax" path="res://scenes/environment.tscn" id="1_b3wb2"]
 [ext_resource type="PackedScene" uid="uid://djb3td85854b3" path="res://scenes/start_game.tscn" id="1_hvjs3"]
 [ext_resource type="PackedScene" uid="uid://b3rclhr4o1a37" path="res://scenes/bubble.tscn" id="1_ii5wx"]
-[ext_resource type="Script" path="res://scripts/camera.gd" id="1_yfg22"]
 [ext_resource type="PackedScene" uid="uid://fribl7odesvw" path="res://scenes/environment/animated/bird.tscn" id="4_suwhn"]
 [ext_resource type="Script" path="res://scripts/bird.gd" id="5_xld5y"]
+[ext_resource type="PackedScene" uid="uid://bnlimnldmssva" path="res://scenes/end_scene.tscn" id="7_bdm77"]
 [ext_resource type="PackedScene" uid="uid://clbaynpvg3vj4" path="res://scenes/death_scene.tscn" id="8_oyiy6"]
 [ext_resource type="AudioStream" uid="uid://r08f5d244muv" path="res://assets/Audio/SFX/Bubble 01.wav" id="12_ynnwi"]
 [ext_resource type="AudioStream" uid="uid://bx88yf7lqagpk" path="res://assets/Audio/SFX/Bubble 02.wav" id="13_iw631"]
 [ext_resource type="AudioStream" uid="uid://2fhqqmn8k16m" path="res://assets/Audio/MUSIC/The Ambient Music Loop.wav" id="13_vlceo"]
 [ext_resource type="AudioStream" uid="uid://c4gmxnvady2kp" path="res://assets/Audio/SFX/Spell of Bubbles.wav" id="14_jiv1w"]
+[ext_resource type="AudioStream" uid="uid://d2n64r4nsxv4y" path="res://assets/Audio/SFX/snake.wav" id="14_wwlwk"]
 [ext_resource type="AudioStream" uid="uid://b25u7g5feq2lq" path="res://assets/Audio/SFX/Bubble 03.wav" id="14_yfy6x"]
+[ext_resource type="AudioStream" uid="uid://xsxweu3bqtwc" path="res://assets/Audio/SFX/BirdCondor 6044_89_1.wav" id="15_4xy67"]
 [ext_resource type="AudioStream" uid="uid://ctk26oqw1vv2q" path="res://assets/Audio/SFX/Bubble 04.wav" id="15_mkmho"]
 
 [node name="root" type="Node2D"]
@@ -27,6 +29,7 @@ position = Vector2(1899.14, 201)
 position = Vector2(120.068, 333)
 
 [node name="bubble" parent="world" instance=ExtResource("1_ii5wx")]
+y_sort_enabled = true
 position = Vector2(-1670, 116)
 scale = Vector2(1.04104, 1.04659)
 
@@ -37,14 +40,13 @@ limit_left = 0
 limit_top = 0
 limit_right = 18000
 limit_bottom = 850
-script = ExtResource("1_yfg22")
 
 [node name="bird" parent="world" instance=ExtResource("4_suwhn")]
 position = Vector2(4028.41, 213)
 script = ExtResource("5_xld5y")
 
 [node name="bird2" parent="world" instance=ExtResource("4_suwhn")]
-position = Vector2(15515.3, 250)
+position = Vector2(14647.8, 247)
 scale = Vector2(0.634824, 0.638208)
 script = ExtResource("5_xld5y")
 
@@ -56,6 +58,10 @@ scale = Vector2(1.00467, 1.00467)
 visible = false
 position = Vector2(764.457, 442)
 scale = Vector2(2.23594, 2.24788)
+
+[node name="end_scene" parent="." instance=ExtResource("7_bdm77")]
+position = Vector2(17167.3, 437)
+frame_progress = 0.463548
 
 [node name="sounds" type="Node" parent="."]
 
@@ -76,3 +82,9 @@ stream = ExtResource("13_vlceo")
 
 [node name="death" type="AudioStreamPlayer" parent="sounds"]
 stream = ExtResource("14_jiv1w")
+
+[node name="snake_sound" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("14_wwlwk")
+
+[node name="bird_sound" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("15_4xy67")
