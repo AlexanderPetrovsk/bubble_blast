@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://scripts/camera.gd" id="1_yfg22"]
 [ext_resource type="PackedScene" uid="uid://cgrcfb3gxxv1t" path="res://scenes/pickups/checkpoint.tscn" id="2_3eec8"]
 [ext_resource type="PackedScene" uid="uid://cp81i7y65qotj" path="res://scenes/pickups/speed_up.tscn" id="3_jp4r7"]
-[ext_resource type="PackedScene" uid="uid://bncokuaogq3b1" path="res://scenes/sun.tscn" id="3_r334t"]
+[ext_resource type="PackedScene" path="res://scenes/sun.tscn" id="3_r334t"]
 [ext_resource type="PackedScene" uid="uid://tsjajmfs0wvm" path="res://scenes/pickups/remove_gitter.tscn" id="4_k4vcd"]
 [ext_resource type="PackedScene" uid="uid://c7a4q2o403qp1" path="res://scenes/pickups/invincibility.tscn" id="5_fpdi5"]
 [ext_resource type="PackedScene" uid="uid://clbaynpvg3vj4" path="res://scenes/death_scene.tscn" id="8_oyiy6"]
@@ -89,7 +89,6 @@ scale = Vector2(0.499701, 0.504)
 [node name="Sun" parent="." instance=ExtResource("3_r334t")]
 z_index = -1
 position = Vector2(130.078, 120)
-scale = Vector2(1, 1)
 
 [node name="start_game" parent="." instance=ExtResource("1_hvjs3")]
 position = Vector2(757.453, 427)

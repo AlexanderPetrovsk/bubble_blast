@@ -442,7 +442,11 @@ shape = SubResource("RectangleShape2D_ch4d6")
 position = Vector2(83, -135)
 shape = SubResource("CircleShape2D_2otel")
 
+[node name="TreeShakeTimer" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
 [connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
 [connection signal="body_entered" from="Show" to="." method="_on_show_body_entered"]
+[connection signal="timeout" from="TreeShakeTimer" to="." method="_on_tree_shake_timer_timeout"]
