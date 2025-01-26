@@ -1,0 +1,121 @@
+[gd_scene load_steps=18 format=3 uid="uid://cumo2r4785328"]
+
+[ext_resource type="PackedScene" uid="uid://c8vehcx4sscax" path="res://scenes/environment.tscn" id="1_b3wb2"]
+[ext_resource type="PackedScene" uid="uid://djb3td85854b3" path="res://scenes/start_game.tscn" id="1_hvjs3"]
+[ext_resource type="PackedScene" uid="uid://b3rclhr4o1a37" path="res://scenes/bubble.tscn" id="1_ii5wx"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="1_yfg22"]
+[ext_resource type="PackedScene" uid="uid://cgrcfb3gxxv1t" path="res://scenes/pickups/checkpoint.tscn" id="2_3eec8"]
+[ext_resource type="PackedScene" uid="uid://cp81i7y65qotj" path="res://scenes/pickups/speed_up.tscn" id="3_jp4r7"]
+[ext_resource type="PackedScene" uid="uid://bncokuaogq3b1" path="res://scenes/sun.tscn" id="3_r334t"]
+[ext_resource type="PackedScene" uid="uid://tsjajmfs0wvm" path="res://scenes/pickups/remove_gitter.tscn" id="4_k4vcd"]
+[ext_resource type="PackedScene" uid="uid://c7a4q2o403qp1" path="res://scenes/pickups/invincibility.tscn" id="5_fpdi5"]
+[ext_resource type="PackedScene" uid="uid://clbaynpvg3vj4" path="res://scenes/death_scene.tscn" id="8_oyiy6"]
+[ext_resource type="PackedScene" uid="uid://fribl7odesvw" path="res://scenes/environment/animated/bird.tscn" id="9_fymvi"]
+[ext_resource type="AudioStream" uid="uid://r08f5d244muv" path="res://assets/Audio/SFX/Bubble 01.wav" id="12_ynnwi"]
+[ext_resource type="AudioStream" uid="uid://bx88yf7lqagpk" path="res://assets/Audio/SFX/Bubble 02.wav" id="13_iw631"]
+[ext_resource type="AudioStream" uid="uid://2fhqqmn8k16m" path="res://assets/Audio/MUSIC/The Ambient Music Loop.wav" id="13_vlceo"]
+[ext_resource type="AudioStream" uid="uid://c4gmxnvady2kp" path="res://assets/Audio/SFX/Spell of Bubbles.wav" id="14_jiv1w"]
+[ext_resource type="AudioStream" uid="uid://b25u7g5feq2lq" path="res://assets/Audio/SFX/Bubble 03.wav" id="14_yfy6x"]
+[ext_resource type="AudioStream" uid="uid://ctk26oqw1vv2q" path="res://assets/Audio/SFX/Bubble 04.wav" id="15_mkmho"]
+
+[node name="root" type="Node2D"]
+scale = Vector2(0.999402, 1)
+
+[node name="bubble_marker" type="Marker2D" parent="."]
+position = Vector2(229.137, 317)
+
+[node name="world" type="Node2D" parent="."]
+position = Vector2(1899.14, 201)
+
+[node name="Environment" parent="world" instance=ExtResource("1_b3wb2")]
+position = Vector2(-807.487, 344)
+
+[node name="bubble" parent="world" instance=ExtResource("1_ii5wx")]
+position = Vector2(-1670, 116)
+scale = Vector2(1.04104, 1.04659)
+
+[node name="Camera2D" type="Camera2D" parent="world/bubble"]
+position = Vector2(335.443, -35.3527)
+zoom = Vector2(0.763, 0.763)
+limit_left = 0
+limit_top = 0
+limit_right = 6000
+limit_bottom = 850
+script = ExtResource("1_yfg22")
+
+[node name="bird" parent="world" instance=ExtResource("9_fymvi")]
+position = Vector2(4894.92, 106)
+scale = Vector2(0.284246, 0.285764)
+
+[node name="PowerUps" type="Node2D" parent="world"]
+position = Vector2(-413.251, -152)
+
+[node name="checkpoint" parent="world/PowerUps" instance=ExtResource("2_3eec8")]
+position = Vector2(-82.9504, 224)
+scale = Vector2(0.499701, 0.504)
+
+[node name="remove_gitter" parent="world/PowerUps" instance=ExtResource("4_k4vcd")]
+position = Vector2(-511.694, 449)
+scale = Vector2(1.97974, 2)
+
+[node name="invincibility" parent="world/PowerUps" instance=ExtResource("5_fpdi5")]
+position = Vector2(390, 278)
+scale = Vector2(2.4985, 2.5)
+
+[node name="speed_up" parent="world/PowerUps" instance=ExtResource("3_jp4r7")]
+position = Vector2(-871, 446)
+scale = Vector2(0.499701, 0.5)
+
+[node name="checkpoint2" parent="world/PowerUps" instance=ExtResource("2_3eec8")]
+position = Vector2(1222.73, 539)
+scale = Vector2(0.499701, 0.5)
+
+[node name="checkpoint3" parent="world/PowerUps" instance=ExtResource("2_3eec8")]
+position = Vector2(2546.52, 220)
+scale = Vector2(0.499701, 0.504)
+
+[node name="remove_gitter2" parent="world/PowerUps" instance=ExtResource("4_k4vcd")]
+position = Vector2(1044.62, 580)
+scale = Vector2(1.97974, 2)
+
+[node name="invincibility2" parent="world/PowerUps" instance=ExtResource("5_fpdi5")]
+position = Vector2(2912.74, 520)
+scale = Vector2(2.4985, 2.5)
+
+[node name="checkpoint4" parent="world/PowerUps" instance=ExtResource("2_3eec8")]
+position = Vector2(3877.32, 644)
+scale = Vector2(0.499701, 0.504)
+
+[node name="Sun" parent="." instance=ExtResource("3_r334t")]
+z_index = -1
+position = Vector2(130.078, 120)
+scale = Vector2(1, 1)
+
+[node name="start_game" parent="." instance=ExtResource("1_hvjs3")]
+position = Vector2(757.453, 427)
+scale = Vector2(1.00467, 1.00467)
+
+[node name="death_scene" parent="." instance=ExtResource("8_oyiy6")]
+visible = false
+position = Vector2(764.457, 442)
+scale = Vector2(2.23594, 2.24788)
+
+[node name="sounds" type="Node" parent="."]
+
+[node name="consume_speed" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("12_ynnwi")
+
+[node name="consume_invincibility" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("13_iw631")
+
+[node name="consume_gitter" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("14_yfy6x")
+
+[node name="consume_scale" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("15_mkmho")
+
+[node name="background_music" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("13_vlceo")
+
+[node name="death" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("14_jiv1w")

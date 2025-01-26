@@ -1,0 +1,155 @@
+[gd_scene load_steps=36 format=3 uid="uid://dsx8u51sxc0jp"]
+
+[ext_resource type="Script" path="res://scripts/moss.gd" id="1_1dg1c"]
+[ext_resource type="Texture2D" uid="uid://f51u6gmswjb" path="res://assets/Moss/Moss_00000.png" id="1_07428"]
+[ext_resource type="Texture2D" uid="uid://b6bog2dheyonj" path="res://assets/Moss/Moss_00001.png" id="2_nvmtg"]
+[ext_resource type="Texture2D" uid="uid://4n24n2e5v3e2" path="res://assets/Moss/Moss_00002.png" id="3_hyyl7"]
+[ext_resource type="Texture2D" uid="uid://clm03rek83pm1" path="res://assets/Moss/Moss_00003.png" id="4_mmaox"]
+[ext_resource type="Texture2D" uid="uid://bfanrjyqqk0gi" path="res://assets/Moss/Moss_00004.png" id="5_l5h41"]
+[ext_resource type="Texture2D" uid="uid://cflclydeln3xa" path="res://assets/Moss/Moss_00005.png" id="6_1w7b2"]
+[ext_resource type="Texture2D" uid="uid://cfv26s4ao8166" path="res://assets/Moss/Moss_00006.png" id="7_tbcb0"]
+[ext_resource type="Texture2D" uid="uid://d1cjtqdr5poc" path="res://assets/Moss/Moss_00007.png" id="8_h3weo"]
+[ext_resource type="Texture2D" uid="uid://bw6n2win7n3is" path="res://assets/Moss/Moss_00008.png" id="9_mkcg1"]
+[ext_resource type="Texture2D" uid="uid://co21wr5vcglyh" path="res://assets/Moss/Moss_00009.png" id="10_5gc7c"]
+[ext_resource type="Texture2D" uid="uid://8vhjyca3glio" path="res://assets/Moss/Moss_00010.png" id="11_gq3jg"]
+[ext_resource type="Texture2D" uid="uid://dqru46haonh23" path="res://assets/Moss/Moss_00011.png" id="12_j6adi"]
+[ext_resource type="Texture2D" uid="uid://djpdbs0dv7gdo" path="res://assets/Moss/Moss_00012.png" id="13_ix8jy"]
+[ext_resource type="Texture2D" uid="uid://bchvmybok1vie" path="res://assets/Moss/Moss_00013.png" id="14_ut3un"]
+[ext_resource type="Texture2D" uid="uid://dvj1s7b777cnl" path="res://assets/Moss/Moss_00014.png" id="15_4slxf"]
+[ext_resource type="Texture2D" uid="uid://dhnxtulr05r7n" path="res://assets/Moss/Moss_00015.png" id="16_yyqjk"]
+[ext_resource type="Texture2D" uid="uid://b5gwdg17rutkm" path="res://assets/Moss/Moss_00016.png" id="17_mnrqx"]
+[ext_resource type="Texture2D" uid="uid://h4j25m4yfs10" path="res://assets/Moss/Moss_00017.png" id="18_bgt25"]
+[ext_resource type="Texture2D" uid="uid://cnwc0aiek1c02" path="res://assets/Moss/Moss_00018.png" id="19_ddapk"]
+[ext_resource type="Texture2D" uid="uid://d0fr1ktl88b24" path="res://assets/Moss/Moss_00019.png" id="20_npuqw"]
+[ext_resource type="Texture2D" uid="uid://4his2bhv406n" path="res://assets/Moss/Moss_00020.png" id="21_1uqsp"]
+[ext_resource type="Texture2D" uid="uid://cg4fpue0i8hhf" path="res://assets/Moss/Moss_00021.png" id="22_07taq"]
+[ext_resource type="Texture2D" uid="uid://d1ytiglxkyl7u" path="res://assets/Moss/Moss_00022.png" id="23_qmc5p"]
+[ext_resource type="Texture2D" uid="uid://b0hxt1krqb5xw" path="res://assets/Moss/Moss_00023.png" id="24_6d2q1"]
+[ext_resource type="Texture2D" uid="uid://vuiggm4dhcky" path="res://assets/Moss/Moss_00024.png" id="25_dlg58"]
+[ext_resource type="Texture2D" uid="uid://dg1eivwx7m5gp" path="res://assets/Moss/Moss_00025.png" id="26_7hiub"]
+[ext_resource type="Texture2D" uid="uid://x8ev40hyc2v5" path="res://assets/Moss/Moss_00026.png" id="27_jw6ev"]
+[ext_resource type="Texture2D" uid="uid://dbdole5a4ed6f" path="res://assets/Moss/Moss_00027.png" id="28_ucrbt"]
+[ext_resource type="Texture2D" uid="uid://bljxr1krikth2" path="res://assets/Moss/Moss_00028.png" id="29_wwj3a"]
+[ext_resource type="Texture2D" uid="uid://du13no7s6qmv5" path="res://assets/Moss/Moss_00029.png" id="30_l3rrk"]
+[ext_resource type="Texture2D" uid="uid://b23864r8t06er" path="res://assets/Moss/Moss_00030.png" id="31_x8emq"]
+[ext_resource type="Texture2D" uid="uid://coqw542gjn5en" path="res://assets/Moss/Moss_00031.png" id="32_l8ddt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tg88n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_07428")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nvmtg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hyyl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mmaox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_l5h41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1w7b2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tbcb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h3weo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mkcg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5gc7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gq3jg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j6adi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ix8jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ut3un")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4slxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yyqjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mnrqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bgt25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ddapk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_npuqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1uqsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_07taq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qmc5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6d2q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_dlg58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7hiub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_jw6ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ucrbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_wwj3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_l3rrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_x8emq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_l8ddt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wynvo"]
+size = Vector2(27.6446, 39.1171)
+
+[node name="Moss" type="Area2D"]
+script = ExtResource("1_1dg1c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tg88n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6.5)
+scale = Vector2(7.23468, 7.23468)
+shape = SubResource("RectangleShape2D_wynvo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

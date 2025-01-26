@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cogu04wiwvhcs"
+path="res://.godot/imported/forest-theme Loop.wav-d5bb9ce6b619519f1322a009b7de56ef.sample"
+
+[deps]
+
+source_file="res://assets/Audio/MUSIC/forest-theme Loop.wav"
+dest_files=["res://.godot/imported/forest-theme Loop.wav-d5bb9ce6b619519f1322a009b7de56ef.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,146 @@
+[gd_scene load_steps=33 format=3 uid="uid://drnlbsvt6idc5"]
+
+[ext_resource type="Texture2D" uid="uid://dd1a72kr382lt" path="res://assets/TreePuff/TreePuff_00000.png" id="1_0e0fd"]
+[ext_resource type="Script" path="res://scripts/tree_1.gd" id="1_nuo7o"]
+[ext_resource type="Texture2D" uid="uid://dkt543i4rup5t" path="res://assets/TreePuff/TreePuff_00001.png" id="2_pdws4"]
+[ext_resource type="Texture2D" uid="uid://c458xqkfoe52b" path="res://assets/TreePuff/TreePuff_00002.png" id="3_m3mk7"]
+[ext_resource type="Texture2D" uid="uid://bge3b0p60ulia" path="res://assets/TreePuff/TreePuff_00003.png" id="4_r2nnj"]
+[ext_resource type="Texture2D" uid="uid://dsepfg87ybroj" path="res://assets/TreePuff/TreePuff_00004.png" id="5_40j01"]
+[ext_resource type="Texture2D" uid="uid://ce7nq6aojwfj8" path="res://assets/TreePuff/TreePuff_00005.png" id="6_dsl27"]
+[ext_resource type="Texture2D" uid="uid://b5fbqsklma2oc" path="res://assets/TreePuff/TreePuff_00006.png" id="7_bv6ll"]
+[ext_resource type="Texture2D" uid="uid://cii3wolnf618b" path="res://assets/TreePuff/TreePuff_00007.png" id="8_q63jr"]
+[ext_resource type="Texture2D" uid="uid://c2ukkj8mte6ky" path="res://assets/TreePuff/TreePuff_00008.png" id="9_t06iw"]
+[ext_resource type="Texture2D" uid="uid://clyckinrdhyil" path="res://assets/TreePuff/TreePuff_00009.png" id="10_3jnot"]
+[ext_resource type="Texture2D" uid="uid://c5ad2mhb3l8mg" path="res://assets/TreePuff/TreePuff_00010.png" id="11_2i8c0"]
+[ext_resource type="Texture2D" uid="uid://d3o2jdbxihayw" path="res://assets/TreePuff/TreePuff_00011.png" id="12_gceoj"]
+[ext_resource type="Texture2D" uid="uid://dbxa5p3yijmqm" path="res://assets/TreePuff/TreePuff_00012.png" id="13_aeenp"]
+[ext_resource type="Texture2D" uid="uid://c5fupnydw2y6o" path="res://assets/TreePuff/TreePuff_00013.png" id="14_6ehj1"]
+[ext_resource type="Texture2D" uid="uid://kcqdw1uqsxvg" path="res://assets/TreePuff/TreePuff_00014.png" id="15_bsdf1"]
+[ext_resource type="Texture2D" uid="uid://dkmq73qv62afx" path="res://assets/TreePuff/TreePuff_00015.png" id="16_7tr5a"]
+[ext_resource type="Texture2D" uid="uid://emokublu2wrt" path="res://assets/TreePuff/TreePuff_00016.png" id="17_wrfnt"]
+[ext_resource type="Texture2D" uid="uid://diq150e77um6r" path="res://assets/TreePuff/TreePuff_00017.png" id="18_6crls"]
+[ext_resource type="Texture2D" uid="uid://wygvogtv8apg" path="res://assets/TreePuff/TreePuff_00018.png" id="19_8yg1c"]
+[ext_resource type="Texture2D" uid="uid://cvuafjud3u8qp" path="res://assets/TreePuff/TreePuff_00019.png" id="20_70afl"]
+[ext_resource type="Texture2D" uid="uid://bcypeyyj8d5un" path="res://assets/TreePuff/TreePuff_00020.png" id="21_2xkr6"]
+[ext_resource type="Texture2D" uid="uid://bfoi5v0unp1sd" path="res://assets/TreePuff/TreePuff_00021.png" id="22_q07as"]
+[ext_resource type="Texture2D" uid="uid://rw6bgj783ve" path="res://assets/TreePuff/TreePuff_00022.png" id="23_scqn5"]
+[ext_resource type="Texture2D" uid="uid://g8h045xeb5gb" path="res://assets/TreePuff/TreePuff_00023.png" id="24_ngmq4"]
+[ext_resource type="Texture2D" uid="uid://csmwyewnjy5ec" path="res://assets/TreePuff/TreePuff_00024.png" id="25_a5rq6"]
+[ext_resource type="Texture2D" uid="uid://6fppwbkvtmln" path="res://assets/TreePuff/TreePuff_00025.png" id="26_amkdo"]
+[ext_resource type="Texture2D" uid="uid://crolnmqee7f7" path="res://assets/TreePuff/TreePuff_00026.png" id="27_q3c80"]
+[ext_resource type="Texture2D" uid="uid://bx0gkue1sv3as" path="res://assets/TreePuff/TreePuff_00027.png" id="28_qxco6"]
+[ext_resource type="Texture2D" uid="uid://dtj0n4qflwd11" path="res://assets/TreePuff/TreePuff_00028.png" id="29_h8evx"]
+[ext_resource type="Texture2D" uid="uid://bcw5emeumrwff" path="res://assets/TreePuff/TreePuff_00029.png" id="30_ugt3w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v8vfa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0e0fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pdws4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m3mk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r2nnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_40j01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dsl27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bv6ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q63jr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_t06iw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3jnot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2i8c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gceoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_aeenp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6ehj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_bsdf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7tr5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wrfnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6crls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8yg1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_70afl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_2xkr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_q07as")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_scqn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ngmq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a5rq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_amkdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_q3c80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_qxco6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_h8evx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ugt3w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 29.0
+}]
+
+[node name="Tree1" type="Area2D"]
+position = Vector2(92, -330)
+scale = Vector2(1.00488, 1.00488)
+script = ExtResource("1_nuo7o")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_v8vfa")
+autoplay = "default"
+speed_scale = 0.5
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(16.9174, 195.048, -152.257, 166.189, -264.708, 115.437, -411.99, 15.9223, -462.742, -30.8495, -555.29, -158.228, -539.368, -211.966, 537.378, -210.97, 554.295, -151.262, 408.009, 31.8446, 285.606, 121.408, 172.16, 169.174)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

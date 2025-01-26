@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dexwdm7dvkca"
+path="res://.godot/imported/Primordial Forest Loop.wav-5df58885c0dbdc26e77f2ffd1f49e25f.sample"
+
+[deps]
+
+source_file="res://assets/Audio/MUSIC/Primordial Forest Loop.wav"
+dest_files=["res://.godot/imported/Primordial Forest Loop.wav-5df58885c0dbdc26e77f2ffd1f49e25f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
