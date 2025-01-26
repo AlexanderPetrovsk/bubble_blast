@@ -12,7 +12,7 @@ const end_scene_Y = 433
 var isReady = false
 
 var WIND_RESISTANCE = 150
-var WIND_VELOCITY = 2000.0
+var WIND_VELOCITY = 200.0
 
 var timeElapsed = 0
 var gitter = 0

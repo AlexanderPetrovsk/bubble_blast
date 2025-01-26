@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b3rclhr4o1a37" path="res://scenes/bubble.tscn" id="1_ii5wx"]
 [ext_resource type="PackedScene" uid="uid://fribl7odesvw" path="res://scenes/environment/animated/bird.tscn" id="4_suwhn"]
 [ext_resource type="Script" path="res://scripts/bird.gd" id="5_xld5y"]
-[ext_resource type="PackedScene" uid="uid://bnlimnldmssva" path="res://scenes/end_scene.tscn" id="7_bdm77"]
+[ext_resource type="PackedScene" path="res://scenes/end_scene.tscn" id="7_bdm77"]
 [ext_resource type="PackedScene" uid="uid://clbaynpvg3vj4" path="res://scenes/death_scene.tscn" id="8_oyiy6"]
 [ext_resource type="AudioStream" uid="uid://r08f5d244muv" path="res://assets/Audio/SFX/Bubble 01.wav" id="12_ynnwi"]
 [ext_resource type="AudioStream" uid="uid://bx88yf7lqagpk" path="res://assets/Audio/SFX/Bubble 02.wav" id="13_iw631"]
