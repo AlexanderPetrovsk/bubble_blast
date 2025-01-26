@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 200.0
 const BUBBLE_SCALE_UP = 0.4
-const BUBBLE_SCALE_DOWN_RATE = 0.05
+const BUBBLE_SCALE_DOWN_RATE = 0
 
 var isReady = false
 
@@ -138,7 +138,7 @@ func get_gitter():
 
 func die():
 	pass
-
+#
 	#death.play()
 	#hasDied = true
 	#death_scene.visible = true

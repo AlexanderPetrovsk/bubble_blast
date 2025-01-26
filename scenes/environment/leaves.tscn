@@ -341,7 +341,6 @@ script = ExtResource("1_t64ui")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-176.475, 346.03)
-scale = Vector2(1, 1)
 polygon = PackedVector2Array(606.707, 32.2962, -251.449, 32.2962, -228.38, -282.591, -128.031, -504.051, -81.8939, -500.591, -31.1427, -414.083, 36.9099, -487.903, 119.957, -491.363, 219.153, -637.849, 266.443, -635.542, 325.269, -701.288, 382.94, -711.669, 494.823, -448.686, 596.326, -235.301)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

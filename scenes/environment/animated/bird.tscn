@@ -1,7 +1,6 @@
-[gd_scene load_steps=87 format=3 uid="uid://fribl7odesvw"]
+[gd_scene load_steps=86 format=3 uid="uid://fribl7odesvw"]
 
 [ext_resource type="Texture2D" uid="uid://c55xvxjelwva1" path="res://assets/Bird/Bird_00000.png" id="1_7jgsk"]
-[ext_resource type="Script" path="res://scripts/bird.gd" id="1_fqq6n"]
 [ext_resource type="Texture2D" uid="uid://cobim21ao4c7y" path="res://assets/Bird/Bird_00001.png" id="2_8rhqa"]
 [ext_resource type="Texture2D" uid="uid://c48s3r023ymou" path="res://assets/Bird/Bird_00002.png" id="3_ps6v6"]
 [ext_resource type="Texture2D" uid="uid://dcvm5xmt6o5y2" path="res://assets/Bird/Bird_00003.png" id="4_4brnu"]
@@ -344,8 +343,7 @@ radius = 365.209
 height = 1064.32
 
 [node name="bird" type="Area2D"]
-scale = Vector2(0.468537, 0.468537)
-script = ExtResource("1_fqq6n")
+scale = Vector2(0.609798, 0.609798)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_s432b")
