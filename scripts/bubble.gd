@@ -137,13 +137,13 @@ func get_gitter():
 	return random_gitter * gitterMultiplier
 
 func die():
-	pass
+	#pass
 
-	#death.play()
-	#hasDied = true
-	#death_scene.visible = true
-	#death_scene.isActive = true
-	#face.play('die')
+	death.play()
+	hasDied = true
+	death_scene.visible = true
+	death_scene.isActive = true
+	face.play('die')
 
 func invincibility():
 	isInvincible = true

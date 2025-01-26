@@ -28,7 +28,7 @@ position = Vector2(229.137, 317)
 position = Vector2(1899.14, 201)
 
 [node name="Environment" parent="world" instance=ExtResource("1_b3wb2")]
-position = Vector2(-807.487, 344)
+position = Vector2(120.068, 333)
 
 [node name="bubble" parent="world" instance=ExtResource("1_ii5wx")]
 position = Vector2(-1670, 116)
