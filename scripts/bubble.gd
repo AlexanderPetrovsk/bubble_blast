@@ -45,6 +45,10 @@ var reachedEnd = false
 @onready var wind_right: AnimatedSprite2D = $bubble_anims/wind_right
 @onready var wind_down: AnimatedSprite2D = $bubble_anims/wind_down
 @onready var wind_up: AnimatedSprite2D = $bubble_anims/wind_up
+@onready var wind_up_left: AnimatedSprite2D = $bubble_anims/wind_up_left
+@onready var wind_up_right: AnimatedSprite2D = $bubble_anims/wind_up_right
+@onready var wind_down_left: AnimatedSprite2D = $bubble_anims/wind_down_left
+@onready var wind_down_right: AnimatedSprite2D = $bubble_anims/wind_down_right
 
 @onready var death: AudioStreamPlayer = $"../../sounds/death"
 @onready var background_music: AudioStreamPlayer = $"../../sounds/background_music"
@@ -97,7 +101,8 @@ func _physics_process(delta: float) -> void:
 	if !isRotating:
 		move_bubble()
 		add_wind_resistance_and_gitter(delta)
-
+	
+	addAnimations()
 	move_and_slide()
 
 func playMusic():
@@ -109,23 +114,44 @@ func scale_up():
 	collisionShape.scale.x += BUBBLE_SCALE_UP
 	collisionShape.scale.y += BUBBLE_SCALE_UP
 
+func addAnimations():
+	pass
+
 func move_bubble():
-	if Input.is_action_pressed("wind_left"):
+	var playingAnimation = null
+
+	if Input.is_action_pressed("wind_left") and !Input.is_action_pressed("wind_down") and !Input.is_action_pressed("wind_up"):
 		velocity.x = WIND_VELOCITY
-		wind_left.play("default")
-		wind_left.visible = true
-	if Input.is_action_pressed("wind_right"):
+		playingAnimation = wind_left
+	if Input.is_action_pressed("wind_right") and !Input.is_action_pressed("wind_down") and !Input.is_action_pressed("wind_up"):
 		velocity.x = -WIND_VELOCITY
-		wind_right.play("default")
-		wind_right.visible = true
+		playingAnimation = wind_right
 	if Input.is_action_pressed("wind_down"):
 		velocity.y = -WIND_VELOCITY
-		wind_down.play("default")
-		wind_down.visible = true
+		playingAnimation = wind_down
 	if Input.is_action_pressed("wind_up"):
 		velocity.y = WIND_VELOCITY
-		wind_up.play("default")
-		wind_up.visible = true
+		playingAnimation = wind_up
+	if Input.is_action_pressed("wind_up") and Input.is_action_pressed("wind_left"):
+		velocity.y = WIND_VELOCITY
+		velocity.x = WIND_VELOCITY
+		playingAnimation = wind_up_left
+	if Input.is_action_pressed("wind_up") and Input.is_action_pressed("wind_right"):
+		velocity.y = WIND_VELOCITY
+		velocity.x = -WIND_VELOCITY
+		playingAnimation = wind_up_right
+	if Input.is_action_pressed("wind_down") and Input.is_action_pressed("wind_left"):
+		velocity.y = -WIND_VELOCITY
+		velocity.x = WIND_VELOCITY
+		playingAnimation = wind_down_left
+	if Input.is_action_pressed("wind_down") and Input.is_action_pressed("wind_right"):
+		velocity.y = -WIND_VELOCITY
+		velocity.x = -WIND_VELOCITY
+		playingAnimation = wind_down_right
+
+	if playingAnimation != null:
+		playingAnimation.play('default')
+		playingAnimation.visible = true
 
 func add_wind_resistance_and_gitter(delta):
 	if velocity.y < 0:

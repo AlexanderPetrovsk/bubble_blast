@@ -6,12 +6,13 @@ const BIRD_SPEED = 500
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var bubble: CharacterBody2D = $"../bubble"
 @onready var camera_2d: Camera2D = $"../bubble/Camera2D"
-
 @onready var bird_sound: AudioStreamPlayer = $"../../sounds/bird_sound"
+
 
 var isActive = false
 var direction = -1
 var soundHasPlayed = false
+
 func _physics_process(delta: float) -> void:
 	isActive = (global_position.x - bubble.global_position.x) < 1500
 	if !isActive:
@@ -20,11 +21,11 @@ func _physics_process(delta: float) -> void:
 	if !bird_sound.playing and !soundHasPlayed:	
 		bird_sound.play()
 		soundHasPlayed = true
-
+		
 	if isRight:
 		direction = 1
 		animated_sprite.flip_h = true
-	
+
 	position.x += direction * BIRD_SPEED * delta
 
 func _on_body_entered(body: Node2D) -> void:
