@@ -62,7 +62,7 @@ position = Vector2(1702, 286)
 scale = Vector2(0.295514, 0.421821)
 
 [node name="cloud" parent="." instance=ExtResource("6_y867r")]
-position = Vector2(1270, -507)
+position = Vector2(1297, -491)
 scale = Vector2(0.708288, 0.708288)
 
 [node name="snake" parent="." instance=ExtResource("8_6mtht")]

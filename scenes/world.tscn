@@ -45,7 +45,7 @@ script = ExtResource("1_yfg22")
 
 [node name="bird" parent="world" instance=ExtResource("9_fymvi")]
 position = Vector2(4894.92, 106)
-scale = Vector2(0.284246, 0.285764)
+scale = Vector2(0.407502, 0.409678)
 
 [node name="PowerUps" type="Node2D" parent="world"]
 position = Vector2(-413.251, -152)

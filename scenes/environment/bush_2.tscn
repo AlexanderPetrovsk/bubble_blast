@@ -349,6 +349,6 @@ polygon = PackedVector2Array(-11.0055, -0.0670776, -110.839, -86.6521, -151.453,
 position = Vector2(17.454, -66.3485)
 sprite_frames = SubResource("SpriteFrames_4t126")
 autoplay = "default"
-frame = 72
+frame_progress = 0.934378
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

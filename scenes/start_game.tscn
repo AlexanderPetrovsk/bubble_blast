@@ -720,10 +720,10 @@ tracks/0/path = NodePath("../Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.4, 1.81, 2.06, 2.166, 2.34, 2.56667, 2.833),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.9333, 2.2, 2.5833, 2.833),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(900, -310), Vector2(877.827, -310), Vector2(800.176, -310), Vector2(210, -310), Vector2(-90.626, -309.385), Vector2(-404.692, -307.846), Vector2(-627, -306.997), Vector2(-627, -306)]
+"values": [Vector2(900, -310), Vector2(890.827, -306), Vector2(-230.692, -306), Vector2(-627, -306), Vector2(-627, -306)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m7yel"]

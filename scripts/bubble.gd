@@ -3,16 +3,16 @@ extends CharacterBody2D
 
 const SPEED = 200.0
 const BUBBLE_SCALE_UP = 0.4
-const BUBBLE_SCALE_DOWN_RATE = 0.08
+const BUBBLE_SCALE_DOWN_RATE = 0.05
 
 var isReady = false
 
-var WIND_RESISTANCE = 200
-var WIND_VELOCITY = 300.0
+var WIND_RESISTANCE = 150
+var WIND_VELOCITY = 200.0
 
 var timeElapsed = 0
 var gitter = 0
-var gitterMultiplier = 1.5
+var gitterMultiplier = 1
 
 var isInvincible = false
 var isRotating = false
@@ -137,11 +137,13 @@ func get_gitter():
 	return random_gitter * gitterMultiplier
 
 func die():
-	death.play()
-	hasDied = true
-	death_scene.visible = true
-	death_scene.isActive = true
-	face.play('die')
+	pass
+
+	#death.play()
+	#hasDied = true
+	#death_scene.visible = true
+	#death_scene.isActive = true
+	#face.play('die')
 
 func invincibility():
 	isInvincible = true

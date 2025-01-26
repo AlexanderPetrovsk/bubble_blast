@@ -1846,7 +1846,7 @@ scale = Vector2(0.749184, 0.752735)
 sprite_frames = SubResource("SpriteFrames_2t5aq")
 animation = &"wow"
 autoplay = "smile"
-frame_progress = 0.0264646
+frame_progress = 0.751537
 
 [node name="wind_left" type="AnimatedSprite2D" parent="bubble_anims"]
 visible = false
