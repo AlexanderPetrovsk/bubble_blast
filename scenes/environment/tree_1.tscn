@@ -125,7 +125,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("30_ugt3w")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 29.0
 }]
@@ -137,7 +137,8 @@ script = ExtResource("1_nuo7o")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_v8vfa")
-frame_progress = 0.0750377
+frame = 29
+frame_progress = 1.0
 speed_scale = 0.5
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

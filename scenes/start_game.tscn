@@ -1,1036 +1,914 @@
-[gd_scene load_steps=178 format=3 uid="uid://djb3td85854b3"]
+[gd_scene load_steps=233 format=3 uid="uid://djb3td85854b3"]
 
 [ext_resource type="Script" path="res://scripts/start_game.gd" id="1_uhy3d"]
+[ext_resource type="Texture2D" uid="uid://dqygk8b1wehhf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00000.png" id="2_e8jy2"]
+[ext_resource type="Texture2D" uid="uid://d1a6f0mfq5drn" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00001.png" id="3_40nhu"]
+[ext_resource type="Texture2D" uid="uid://ioeis1ht1hdq" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00002.png" id="4_jyh8n"]
+[ext_resource type="Texture2D" uid="uid://88nr3awh3k8m" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00003.png" id="5_1rtcg"]
+[ext_resource type="Texture2D" uid="uid://b1gsjwy7cg52x" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00004.png" id="6_j8cbp"]
+[ext_resource type="Texture2D" uid="uid://cjda1f1shmwa0" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00005.png" id="7_hw7q7"]
+[ext_resource type="Texture2D" uid="uid://bgg678xslw2i3" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00006.png" id="8_438tc"]
+[ext_resource type="Texture2D" uid="uid://d2nw0561ltf71" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00007.png" id="9_02nov"]
+[ext_resource type="Texture2D" uid="uid://lkrg5yiqsvgy" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00008.png" id="10_gqraa"]
+[ext_resource type="Texture2D" uid="uid://omi51maeqaqg" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00009.png" id="11_sr6dn"]
+[ext_resource type="Texture2D" uid="uid://2k6mhctmt7kp" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00010.png" id="12_6t4r8"]
+[ext_resource type="Texture2D" uid="uid://buirlw5khwlfl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00011.png" id="13_pvjk4"]
+[ext_resource type="Texture2D" uid="uid://ioefpy0kci4y" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00012.png" id="14_7srpq"]
+[ext_resource type="Texture2D" uid="uid://biq8ihgeyqi43" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00013.png" id="15_n6u5f"]
+[ext_resource type="Texture2D" uid="uid://bteubtfi3c3fc" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00014.png" id="16_o5oov"]
+[ext_resource type="Texture2D" uid="uid://bhl4wxukuxuf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00015.png" id="17_ciy7s"]
+[ext_resource type="Texture2D" uid="uid://b7i0pkfyv1lwf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00016.png" id="18_h5nqd"]
+[ext_resource type="Texture2D" uid="uid://cb2ru3mkkvmxu" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00017.png" id="19_rtsaq"]
+[ext_resource type="Texture2D" uid="uid://dymulctcux75l" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00018.png" id="20_yut5m"]
+[ext_resource type="Texture2D" uid="uid://dwauav6hbu4v7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00019.png" id="21_6uvbd"]
+[ext_resource type="Texture2D" uid="uid://ch3mc5qm6dfqx" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00020.png" id="22_sx1kb"]
+[ext_resource type="Texture2D" uid="uid://baoc00o5j4kc8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00021.png" id="23_lhm5j"]
+[ext_resource type="Texture2D" uid="uid://bbwvocbi40qcg" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00022.png" id="24_1j468"]
+[ext_resource type="Texture2D" uid="uid://dieyv66nkj8oc" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00023.png" id="25_kaotn"]
+[ext_resource type="Texture2D" uid="uid://cg2w5oiei0lsw" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00024.png" id="26_euf8k"]
+[ext_resource type="Texture2D" uid="uid://lti3n7kuis8c" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00025.png" id="27_ydc5r"]
+[ext_resource type="Texture2D" uid="uid://b4qtbc3wbuidf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00026.png" id="28_qswdp"]
+[ext_resource type="Texture2D" uid="uid://ci2v7elekf16m" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00027.png" id="29_magw8"]
+[ext_resource type="Texture2D" uid="uid://b1us08tiwtri8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00028.png" id="30_80yqh"]
+[ext_resource type="Texture2D" uid="uid://il6klkq3qw28" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00029.png" id="31_msdmu"]
+[ext_resource type="Texture2D" uid="uid://5biywgpylq43" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00030.png" id="32_t1hbq"]
+[ext_resource type="Texture2D" uid="uid://b4g7q1y8fp2c" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00031.png" id="33_n3mxt"]
+[ext_resource type="Texture2D" uid="uid://y54xxnullohi" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00032.png" id="34_7ch3a"]
+[ext_resource type="Texture2D" uid="uid://cx3ejeoymk0k3" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00033.png" id="35_m7kma"]
+[ext_resource type="Texture2D" uid="uid://dhdu5278migpf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00034.png" id="36_vd2fy"]
+[ext_resource type="Texture2D" uid="uid://ck6ibjuq1l22a" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00035.png" id="37_783y7"]
+[ext_resource type="Texture2D" uid="uid://c2xbgk4iu3u4j" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00036.png" id="38_bugex"]
+[ext_resource type="Texture2D" uid="uid://do1cx241p1y8o" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00037.png" id="39_bhxq1"]
+[ext_resource type="Texture2D" uid="uid://45y8ymesjbi" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00038.png" id="40_0dsbo"]
+[ext_resource type="Texture2D" uid="uid://cwwrfbvvc3s0d" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00039.png" id="41_xqct7"]
+[ext_resource type="Texture2D" uid="uid://cqrrkajkd55bo" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00040.png" id="42_eryua"]
+[ext_resource type="Texture2D" uid="uid://bpqrndg4npvoe" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00041.png" id="43_gx566"]
+[ext_resource type="Texture2D" uid="uid://hle0powd3vgw" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00042.png" id="44_tqlgi"]
+[ext_resource type="Texture2D" uid="uid://ccm2hyxfs54gw" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00043.png" id="45_jj040"]
+[ext_resource type="Texture2D" uid="uid://c0aluf7irhfdf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00044.png" id="46_4657e"]
+[ext_resource type="Texture2D" uid="uid://s23lcv3frkxc" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00045.png" id="47_c18dd"]
+[ext_resource type="Texture2D" uid="uid://b11155b88wtq2" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00046.png" id="48_q3ylw"]
+[ext_resource type="Texture2D" uid="uid://dsm2xasbghdvl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00047.png" id="49_twxuk"]
+[ext_resource type="Texture2D" uid="uid://cmpruvcmqwad" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00048.png" id="50_umj1c"]
+[ext_resource type="Texture2D" uid="uid://1fmn06a7sq78" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00049.png" id="51_lsvxc"]
+[ext_resource type="Texture2D" uid="uid://dbfubvil8u4j" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00050.png" id="52_y8xw4"]
+[ext_resource type="Texture2D" uid="uid://o0jn50orhtnn" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00051.png" id="53_8nmc3"]
+[ext_resource type="Texture2D" uid="uid://sl6bgijgylqd" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00052.png" id="54_0j7vl"]
+[ext_resource type="Texture2D" uid="uid://b3squo7vyyfo6" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00053.png" id="55_dcn7t"]
+[ext_resource type="Texture2D" uid="uid://v56mfdodrcuf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00054.png" id="56_vav8x"]
+[ext_resource type="Texture2D" uid="uid://b5un63pe0nvs5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00055.png" id="57_t5fgi"]
+[ext_resource type="Texture2D" uid="uid://cs1bbojcryyvb" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00056.png" id="58_6mvgy"]
+[ext_resource type="Texture2D" uid="uid://dvuoiimi88q7n" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00057.png" id="59_n2lpi"]
+[ext_resource type="Texture2D" uid="uid://cj427nclm1jdc" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00058.png" id="60_1iefu"]
+[ext_resource type="Texture2D" uid="uid://dp0smp60jmrs1" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00059.png" id="61_jph3y"]
+[ext_resource type="Texture2D" uid="uid://dlc081s2nforl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00060.png" id="62_jo2on"]
+[ext_resource type="Texture2D" uid="uid://bddjrxx6086fi" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00061.png" id="63_k0usb"]
+[ext_resource type="Texture2D" uid="uid://bkwha0lfudk6g" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00062.png" id="64_2ik84"]
+[ext_resource type="Texture2D" uid="uid://c1y7gdh01kpjy" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00063.png" id="65_ifku1"]
+[ext_resource type="Texture2D" uid="uid://bwsgsw74agdc1" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00064.png" id="66_xr7if"]
+[ext_resource type="Texture2D" uid="uid://dpa5vx4nqjhp8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00065.png" id="67_qx4qm"]
+[ext_resource type="Texture2D" uid="uid://d0ph7acep8l30" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00066.png" id="68_itlaf"]
+[ext_resource type="Texture2D" uid="uid://cgl2ilvlhgp8p" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00067.png" id="69_e13j7"]
+[ext_resource type="Texture2D" uid="uid://sprt8nq4hq0x" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00068.png" id="70_vatgi"]
+[ext_resource type="Texture2D" uid="uid://brdia88178pnx" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00069.png" id="71_m3ov7"]
+[ext_resource type="Texture2D" uid="uid://dyh15mf0g2fng" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00070.png" id="72_fa6j8"]
+[ext_resource type="Texture2D" uid="uid://dmn2u37w77cou" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00071.png" id="73_sh5tv"]
+[ext_resource type="Texture2D" uid="uid://hdnhdycfxjsb" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00072.png" id="74_p7hp0"]
+[ext_resource type="Texture2D" uid="uid://cdedm2oy1i11m" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00073.png" id="75_0r367"]
+[ext_resource type="Texture2D" uid="uid://rurimm56gc51" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00074.png" id="76_6xvsl"]
+[ext_resource type="Texture2D" uid="uid://6h4brgye7fif" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00075.png" id="77_a0kf1"]
+[ext_resource type="Texture2D" uid="uid://dps72pwmjnyn0" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00076.png" id="78_cqbxb"]
+[ext_resource type="Texture2D" uid="uid://dgpiidmgktvjn" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00077.png" id="79_okk8f"]
+[ext_resource type="Texture2D" uid="uid://yvpf8grhct2y" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00078.png" id="80_g6a8q"]
+[ext_resource type="Texture2D" uid="uid://cklqsi88jg8cv" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00079.png" id="81_071au"]
+[ext_resource type="Texture2D" uid="uid://d0lry4sjpd5y0" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00080.png" id="82_020xn"]
+[ext_resource type="Texture2D" uid="uid://dl6csyy1bd03v" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00081.png" id="83_5q632"]
+[ext_resource type="Texture2D" uid="uid://d2qk7nojucn25" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00082.png" id="84_ngd2l"]
+[ext_resource type="Texture2D" uid="uid://coac8655pofq7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00083.png" id="85_d0b8d"]
+[ext_resource type="Texture2D" uid="uid://78qgnp3x0ad" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00084.png" id="86_ooe28"]
+[ext_resource type="Texture2D" uid="uid://c4jr2p0npa1py" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00085.png" id="87_jx7y0"]
+[ext_resource type="Texture2D" uid="uid://cycatgq75rtgl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00086.png" id="88_wbmjo"]
+[ext_resource type="Texture2D" uid="uid://bq0tx3p3tfbrd" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00087.png" id="89_va6bd"]
+[ext_resource type="Texture2D" uid="uid://dicsab6805xig" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00088.png" id="90_l2xpr"]
+[ext_resource type="Texture2D" uid="uid://cxe5lkeslxa0x" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00089.png" id="91_fbmcr"]
+[ext_resource type="Texture2D" uid="uid://dwy5vb6yh5pos" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00090.png" id="92_06yym"]
+[ext_resource type="Texture2D" uid="uid://b81r8bf04xjq7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00091.png" id="93_87new"]
+[ext_resource type="Texture2D" uid="uid://3ymoy15tsrs2" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00092.png" id="94_687fc"]
+[ext_resource type="Texture2D" uid="uid://b1o8lb8nm6swu" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00093.png" id="95_l12j7"]
+[ext_resource type="Texture2D" uid="uid://ro6aud0yrrfp" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00094.png" id="96_gfhp3"]
+[ext_resource type="Texture2D" uid="uid://76u5su4t7t1b" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00095.png" id="97_1kr8v"]
+[ext_resource type="Texture2D" uid="uid://2vdjy5o7qgc3" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00096.png" id="98_rrp17"]
+[ext_resource type="Texture2D" uid="uid://cfwt1sj5ko2le" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00097.png" id="99_ga4me"]
+[ext_resource type="Texture2D" uid="uid://b7fmfpj5ybmhb" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00098.png" id="100_gm3rj"]
+[ext_resource type="Texture2D" uid="uid://djjynbr1l38q0" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00099.png" id="101_m4qqk"]
+[ext_resource type="Texture2D" uid="uid://bf4ey2wa8hxy7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00100.png" id="102_aov0r"]
+[ext_resource type="Texture2D" uid="uid://duh7crkf685ev" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00101.png" id="103_kpy7y"]
+[ext_resource type="Texture2D" uid="uid://dm7xed4ayodmf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00102.png" id="104_3nn83"]
+[ext_resource type="Texture2D" uid="uid://c6cmsek3sh7kg" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00103.png" id="105_gcjkx"]
+[ext_resource type="Texture2D" uid="uid://6j01oljls7ry" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00104.png" id="106_yt6rk"]
+[ext_resource type="Texture2D" uid="uid://d2x2y86vkacw8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00105.png" id="107_7ug4o"]
+[ext_resource type="Texture2D" uid="uid://c603baem5ydhx" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00106.png" id="108_uga5f"]
+[ext_resource type="Texture2D" uid="uid://cexipsxdpky3u" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00107.png" id="109_xibo8"]
+[ext_resource type="Texture2D" uid="uid://cbdq5bnt5khpo" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00108.png" id="110_fae03"]
+[ext_resource type="Texture2D" uid="uid://cpg1lv0hlh182" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00109.png" id="111_nfpu2"]
+[ext_resource type="Texture2D" uid="uid://ciyphr3edbq6d" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00110.png" id="112_s16xx"]
+[ext_resource type="Texture2D" uid="uid://dx0xguoahrrbp" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00111.png" id="113_yymj3"]
+[ext_resource type="Texture2D" uid="uid://boohsjcgo5wo6" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00112.png" id="114_yuogo"]
+[ext_resource type="Texture2D" uid="uid://q5tcvax2j04i" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00113.png" id="115_71roy"]
+[ext_resource type="Texture2D" uid="uid://4g7s2sr0clsc" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00114.png" id="116_k6cff"]
+[ext_resource type="Texture2D" uid="uid://lshjkm5d2qc6" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00115.png" id="117_qtjor"]
+[ext_resource type="Texture2D" uid="uid://c1812ussx5hae" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00116.png" id="118_cfe1o"]
+[ext_resource type="Texture2D" uid="uid://c3m0xat16qlyg" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00117.png" id="119_54dpn"]
+[ext_resource type="Texture2D" uid="uid://dhgp1vtmjjirr" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00118.png" id="120_kdif1"]
+[ext_resource type="Texture2D" uid="uid://clra62vqvut3u" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00119.png" id="121_3p3hg"]
+[ext_resource type="Texture2D" uid="uid://b546nr8wcea7w" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00120.png" id="122_nfmqo"]
+[ext_resource type="Texture2D" uid="uid://bomnprf22102g" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00121.png" id="123_kika7"]
+[ext_resource type="Texture2D" uid="uid://4sc5xolo8anf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00122.png" id="124_wd3ak"]
+[ext_resource type="Texture2D" uid="uid://d4ese2wgrpxu5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00123.png" id="125_m7yl3"]
+[ext_resource type="Texture2D" uid="uid://bus4on0lh1fkm" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00124.png" id="126_gr67f"]
+[ext_resource type="Texture2D" uid="uid://dmdl4mddld21u" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00125.png" id="127_nuodt"]
+[ext_resource type="Texture2D" uid="uid://bhmxonywbi4ly" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00126.png" id="128_yof8r"]
+[ext_resource type="Texture2D" uid="uid://decpisl56wmen" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00127.png" id="129_jvh2c"]
+[ext_resource type="Texture2D" uid="uid://beexhalm4o1eh" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00128.png" id="130_clu2v"]
+[ext_resource type="Texture2D" uid="uid://bl76awp3ge1e5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00129.png" id="131_lychq"]
+[ext_resource type="Texture2D" uid="uid://q7h6h5u3eg6y" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00130.png" id="132_d8iv8"]
+[ext_resource type="Texture2D" uid="uid://isdd6x52jnr7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00131.png" id="133_nudxv"]
+[ext_resource type="Texture2D" uid="uid://btj2pkfh03kh5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00132.png" id="134_3lloa"]
+[ext_resource type="Texture2D" uid="uid://dp1nsficg58jd" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00133.png" id="135_0u41u"]
+[ext_resource type="Texture2D" uid="uid://bjapg4ql5xiij" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00134.png" id="136_hdtv0"]
+[ext_resource type="Texture2D" uid="uid://b3i1rbhlq7gdl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00135.png" id="137_idq7e"]
+[ext_resource type="Texture2D" uid="uid://dcs36sualoybp" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00136.png" id="138_l34dm"]
+[ext_resource type="Texture2D" uid="uid://ds0wgb3ctfmpj" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00137.png" id="139_ht6ue"]
+[ext_resource type="Texture2D" uid="uid://eilvw6oqxnw" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00138.png" id="140_60bmc"]
+[ext_resource type="Texture2D" uid="uid://dvxjcof1el4k3" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00139.png" id="141_7rk1d"]
+[ext_resource type="Texture2D" uid="uid://41o6d7t05xgl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00140.png" id="142_8xnod"]
+[ext_resource type="Texture2D" uid="uid://lgo3dee7mtd1" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00141.png" id="143_u6y0t"]
+[ext_resource type="Texture2D" uid="uid://cocycoty78fko" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00142.png" id="144_jue0q"]
+[ext_resource type="Texture2D" uid="uid://ffh6cacfgx8o" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00143.png" id="145_58chu"]
+[ext_resource type="Texture2D" uid="uid://c1yds2qgas8si" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00144.png" id="146_7ro8n"]
+[ext_resource type="Texture2D" uid="uid://dya1pe6grdc5t" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00145.png" id="147_87fdi"]
+[ext_resource type="Texture2D" uid="uid://cak3acv2uvpa1" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00146.png" id="148_jib0r"]
+[ext_resource type="Texture2D" uid="uid://dohbbf75efgyk" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00147.png" id="149_6sgv7"]
+[ext_resource type="Texture2D" uid="uid://kf6k7ha4i6dx" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00148.png" id="150_cw00l"]
+[ext_resource type="Texture2D" uid="uid://tu8cl8bbw8r7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00149.png" id="151_cs3mk"]
+[ext_resource type="Texture2D" uid="uid://0nbwqosd1rlt" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00150.png" id="152_65fu0"]
+[ext_resource type="Texture2D" uid="uid://d0o6cukifqj8t" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00151.png" id="153_aces7"]
+[ext_resource type="Texture2D" uid="uid://wt8f4i8wpta8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00152.png" id="154_cyef5"]
+[ext_resource type="Texture2D" uid="uid://b7lupa2w0207d" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00153.png" id="155_bo2ut"]
+[ext_resource type="Texture2D" uid="uid://bg3p1sidbkjf0" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00154.png" id="156_h1ro4"]
+[ext_resource type="Texture2D" uid="uid://vyjtqsqxequq" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00155.png" id="157_tww7f"]
+[ext_resource type="Texture2D" uid="uid://d67auvud3swn" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00156.png" id="158_a4g1i"]
+[ext_resource type="Texture2D" uid="uid://n1ep3e6pppls" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00157.png" id="159_wkc62"]
+[ext_resource type="Texture2D" uid="uid://s6ve0i4hq23u" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00158.png" id="160_1wedt"]
+[ext_resource type="Texture2D" uid="uid://df10778auhyq4" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00159.png" id="161_e2ald"]
+[ext_resource type="Texture2D" uid="uid://brk5817x5atp5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00160.png" id="162_puoug"]
+[ext_resource type="Texture2D" uid="uid://dook248i5h5bi" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00161.png" id="163_u3tw1"]
+[ext_resource type="Texture2D" uid="uid://c34x5wnf8j1nw" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00162.png" id="164_sm8n2"]
+[ext_resource type="Texture2D" uid="uid://bsblmjeuiqg46" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00163.png" id="165_4c8qb"]
+[ext_resource type="Texture2D" uid="uid://dcnux7wadviub" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00164.png" id="166_urvx8"]
+[ext_resource type="Texture2D" uid="uid://b1agaor42gypf" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00165.png" id="167_x4cuh"]
+[ext_resource type="Texture2D" uid="uid://6hc0p1qdcq65" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00166.png" id="168_eio6j"]
+[ext_resource type="Texture2D" uid="uid://bruwjb6ojkf00" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00167.png" id="169_40n4a"]
+[ext_resource type="Texture2D" uid="uid://dl21jlc6ob6v7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00168.png" id="170_58p3v"]
+[ext_resource type="Texture2D" uid="uid://doum3jutnpqh8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00169.png" id="171_32de7"]
+[ext_resource type="Texture2D" uid="uid://tpvybl7ql4rq" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00170.png" id="172_x00jl"]
+[ext_resource type="Texture2D" uid="uid://dwm2luonu8mdk" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00171.png" id="173_3kqp0"]
 [ext_resource type="Texture2D" uid="uid://ubvb3qqldw5n" path="res://assets/Sun.png" id="173_6mrcp"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ubpmq"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00000.png-73463c6854feacd85042659eab8a94c4.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0xksn"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00001.png-f25c6c05e5936e410cf93f00cce73b4b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3qdyc"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00002.png-128a68789c99f6f3763f31e452ea316e.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b55bh"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00003.png-de7436d8ddbd553ac4d70b121ddab9a6.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_owmjp"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00004.png-ab10585e02c099d0ed839c74bff26b3c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a31na"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00005.png-8144d77c69e8270180c62f94fdc21223.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l6oia"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00006.png-5542e1da466ddaf7267d79ff8e6996c5.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6kgdf"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00007.png-1b23e863f15bc0ed9b66f7c3f28fe775.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8nerp"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00008.png-8783b089c1d9182bffe415ccec928d34.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b5e00"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00009.png-fed729673fa4190f360cac6a30ad0ae2.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ys0n"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00010.png-233d5f16e04c6b9dda0ab48a35a55f82.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qda2f"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00011.png-699d7595a30a2187bb2234bb15218d15.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jk47a"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00012.png-743d140411274eec5144c9c4e762daf7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v863q"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00013.png-04be221f860f5dfd8f3c29552c414a95.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_38bm5"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00014.png-92030441686a1b090560ed11674d3777.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jqe2l"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00015.png-794e9bbfda1b1e1ab706036714b1b6b9.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o7kgj"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00016.png-3ee1ea531e6c980f2c2f9b53b744caec.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jrtro"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00017.png-a88f4775b69da4ac75945dd380b37903.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3co86"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00018.png-bb9de9054fa8a428cb1bc729281f036b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ls3p"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00019.png-861fc8388bd4f22acb2136f2bd7c4bd5.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v2upc"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00020.png-24a81eabe1a19802d5dec9813a5a64b3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lw5b8"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00021.png-fa349d82b5cff1eaaf61fb556f0194a2.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ccm1k"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00022.png-2408b8d3ec7c798fc42aedb9f7d584fb.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nh0m5"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00023.png-2508d2af32f7a1f441ba13518dd8f560.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n6tmu"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00024.png-cea8a5d139e8b50aad4b84cfc9ecdba8.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eqead"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00025.png-df029e03014deecd0c074e19d2a3c38c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yr6hw"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00026.png-c21ea6cf1570b2ba963de89c8f213298.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cp1q6"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00027.png-5425dfc452032679e2b926fdb84b10cb.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t7u43"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00028.png-61439d9fd93ce4fd7eceb6a67fb85cca.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6x2yd"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00029.png-c261bb7b76adc1b9facae438bb3be447.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t2psj"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00030.png-444da6694a6e398b30c89e54eb75f925.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vbcu2"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00031.png-50fe6a636ff8de8030f4b2c1b0048095.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vi2xy"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00032.png-d5c869b1e03fdb5df7cfacff7dac7fca.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2oi5y"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00033.png-c8c70e6847b83797316219065381ca9e.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5l4w3"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00034.png-21037f0290215630d04c1ffe0cb4894a.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ad5qy"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00035.png-dfb7f14fbff775d193b6471a7bc07faa.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mj0uy"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00036.png-ec773cc361784972a63129c137f36580.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hve1b"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00037.png-d7d0c12e975e57488b982a6e9cc6fe2d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bsuqg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00038.png-8708eee6ca51c05f67e299aa060626a1.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_leidr"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00039.png-281fc4a9027fd6c508abc2792f1ba273.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p5scj"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00040.png-44f2d4db9b1ad4dab52a4741e8184b9d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_byj4a"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00041.png-5705fd7e9c84f48cce3ca27f749f071c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6r0w4"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00042.png-bd951e12a15ef1a654cacfa0c9bba246.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xoyqg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00043.png-1e4fe2007a43c55d7965930e4fbdbbe6.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_06c8w"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00044.png-1285135f392a2a401d08e963e6aa2cc4.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_72gpq"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00045.png-80ba3f9f6c3a9e92ca63122084bffb89.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bypoc"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00046.png-38807be25d7d538b65952786a0a380ce.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ittnf"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00047.png-795ec3f0f947a24a06747f10cd5decf6.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cj13d"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00048.png-60bc953ac8cf3b9e006165396fdab01e.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7fe6y"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00049.png-4f74693cf6250b5c64886ef1abed802e.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hf5kn"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00050.png-40b6546bf9b7c0476e0d24576b4af661.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ejgrh"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00051.png-af241cae4ae9c67e9f3e1bc989d0342b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_68p65"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00052.png-32a2e175369f2434371bfcd25457627a.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x1o48"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00053.png-ebacd3ca4e02ecb4724fb3ca5d6f5ae1.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4brdy"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00054.png-e4bc5405b43b897ec63f7dc9ad7c1efd.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tlopo"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00055.png-7183a6f51b21cc6d6a054bc78de6099d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sql22"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00056.png-d8264e0aba029ae49a7be1f201836308.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_woe4s"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00057.png-e753cd46182f0bb382228aaffcc389e4.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ke6q3"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00058.png-20e88e67779985762e493713872ef81f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jegry"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00059.png-da2fd1d9f3d138491482827bc90cfd52.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fpyj4"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00060.png-9c5bb65a661618ffcf59f19de2c1bb8e.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dbx4g"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00061.png-0b224affca133700a3ad8e55ed4fc88c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oltg7"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00062.png-fb0691e287440018b033dccf615d7886.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mtr0r"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00063.png-0254cfc8da1a3344cc6e5f7844b02b8b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cuv0g"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00064.png-87ad314c9fbd6177f4573dafaf638153.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kjiyg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00065.png-62aec2550cd2e28552561f734347ace3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k64h6"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00066.png-c8a17828ea26ce9326ee99f5ebcbdaba.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m35oq"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00067.png-6ed652de23c803901a7b67d0df7093c3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ja6au"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00068.png-799d1f39ab163446030b9e700b61f473.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oq2d8"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00069.png-9d45167b114da0bf3ab0334001ee0287.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j8e8g"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00070.png-d541261a04da84513fa643fab8ff3add.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wqr27"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00071.png-0cf2a3aab39b50cf26178577bd323c42.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bvnfo"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00072.png-680ea48730c565f284200540e3284ce7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f01ha"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00073.png-c82c9c0f286124f2e241b2907199634f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_irv0f"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00074.png-30bf4a510036899a03cae517c7bf9f0f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qp853"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00075.png-8f6200fdf12bb4144274fa47c6ef6249.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8euy1"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00076.png-9a18ec200358bb0ad6eaec736cf2af66.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rttdg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00077.png-6b75185fa96bc45df5d58cbf6afce183.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_evk81"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00078.png-bf98a5d1cb496058f6a01a868959664c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vxfym"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00079.png-1d5d8b02cbfec445daecb52dcef961f0.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e74bv"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00080.png-f40900d07e22fc4e702fecf088a42f6c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yni57"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00081.png-e590a06a20e7d7c8ea45579073352bd0.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_845ni"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00082.png-64eb60472ef1153693b58c4c49ce2f72.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pj76v"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00083.png-4a6b314430cf3aed7c88318b996b354b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_esyft"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00084.png-6aefc023082ccedb850fe6818a9610af.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jjys6"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00085.png-0e201a7790aec7919a75499934cfb478.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3r6co"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00086.png-313a6670f76d0a5e61efef71b1def3e7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4nsdp"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00087.png-00ef1e498bb3403fac1192becf1c55c7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rmldd"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00088.png-4f7117323dd2af27d09ea3fb094fe27a.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sdgeg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00089.png-b22134de6b1ac35c4cbe773e6d88eb69.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k660s"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00090.png-b6b0b447b2727e7fe19cd5941d01812d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6xfgv"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00091.png-ff1876c84a32fdf1008a8c1380692629.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v281b"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00092.png-de943328861fc0586fea4989b470fcd9.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dgxwe"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00093.png-afc039504fe8ee83b5b28cd2f315cafd.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ol5k6"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00094.png-2ef14e2255142ba2128b141ba84e2847.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u63m7"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00095.png-b1d39274886f2f88b0722fd767f0da01.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ec4mf"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00096.png-5d6672bfc758cd8aa04496045023d3d3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cbfsg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00097.png-43b7b811ccf674e19f9de75c16c0a7b3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4jee1"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00098.png-a53c9cf87d63da1dd6bb70f801dd4a8f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0mhbf"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00099.png-efa30591fd2cbb87155b561d9337bf59.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_30vyq"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00100.png-dd9b9a2bb3ea92fa1bc033ad8074db5f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8yg7p"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00101.png-32ec8d7ded3e61b426619986df31a17d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8ufxu"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00102.png-ec4d1f05e614287636f360fef3337242.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_txmli"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00103.png-dd74fc2ccc4210d711f0bf3bae639d48.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m41mb"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00104.png-9755da3d2f46f89015b4d457dcc62187.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mjnic"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00105.png-0d8fc1c7f9cd8740bfda39c3e689a03a.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r1eoq"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00106.png-23e2e37d7c5e05b6678e84e51966a2f7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r3oe0"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00107.png-aab54a1bfdafdb12a8c542b8cce51d01.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fe1th"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00108.png-232563ce4ef815c4f46ac0f51ee439d4.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_64fcb"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00109.png-67960e730634db9b3c623fa8f0267967.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wtmm7"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00110.png-a30f45c59abae47c54043bd728197cc1.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_47f5p"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00111.png-3b0a71f65a3a5e1fc2489431eeabc5e5.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jj2fe"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00112.png-cf580ae7718f52dba470329bb562496b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0vrll"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00113.png-c39a357a68f55cfd56c197cb8a6f456b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0j6v7"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00114.png-ae2df14525b9210b59e7eaa4b3570fb4.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_78b81"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00115.png-24e400129b72dcc45f045f5dc18a8808.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mnvsn"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00116.png-e1c37c5e2bec7778882502730b778a6b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ncks5"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00117.png-83a21734b55df5144a1a35b83964c80d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e5gap"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00118.png-6adf95a89dd82edd85c8078fa1718fed.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ac3gy"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00119.png-a40959d65db6dd9c921497347ce9acfe.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n6l04"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00120.png-9be175c4f3c9d70f7dca350dacd8e20d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ouxjv"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00121.png-139aa1f558bb80a3b9481d575bfd2e16.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_byapy"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00122.png-77b56004a5e00629fbb01055ce3ee3f8.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7qyeo"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00123.png-a871f5f3fb5d6ff63db379a90e4fb2cb.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lv1je"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00124.png-67b4c31dc4830a10f0de24cb4d302d56.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6s77a"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00125.png-f1f0f533010da8e58c4ac2449da84c26.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nqs3g"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00126.png-7169c3105c0e1244dc4db84ae6d4f8c5.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7s3cs"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00127.png-b00e98bbe7311e1156b65fdb5feed70f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4gtdn"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00128.png-ff51bfc5974b1a0aaf75182df7ed5c00.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o41be"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00129.png-09e3994c1b406e1a1bff0cae0552092d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vcyy5"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00130.png-2eef7a80cdeb2ff7162e76109aad099a.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k6tah"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00131.png-6ad92cf53ed30ec0c6c46eeacd850092.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_boylf"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00132.png-5b286a73bbfbe651601a906473a76bf3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rtxxw"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00133.png-7971c440df007d4eca6dac3e4eefd8f0.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e4isn"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00134.png-cccec791486c1f0e5bce375f6c569bd6.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pt213"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00135.png-5a0e75bbd35eead57cc0fb371e9e6041.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xa53s"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00136.png-3d47e87c224efc90afe788ee5b48b6eb.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pofob"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00137.png-003189e864a4548983186b69ec5b8aa6.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0bngs"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00138.png-9d1520e48d94613f16a35cc922404635.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_skqfi"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00139.png-55c903b68c049b91c693f2f363de1b4d.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4dtgv"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00140.png-bb67012b37b938c0fbe5a2bda3c2cb29.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1csen"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00141.png-b7809b6f2d3dfd27cba6eb84c38dbb5f.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kkis7"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00142.png-7bb7d35fae5e265315249195bc59e059.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sv0ei"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00143.png-46581ddd3616a6525a006e669d947ba0.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uiped"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00144.png-41d9aedb15bf3c73bd3a7bb8c4c3c87c.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_opp50"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00145.png-625162c2866a2e21a3f9d0cfd8142e92.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dlyp2"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00146.png-7991940bbaca617ae80170c42d481abf.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ugp4"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00147.png-e8081f7be93d3d38b29c4c2dfd96add3.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rduih"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00148.png-4959bd0fc1a4aebbae9325bd2f7d8162.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oxsp2"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00149.png-322a7650861c4b723256077eaed08057.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ffabu"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00150.png-90543889f6431878b085130d022cd1db.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qa7k8"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00151.png-2638f5d1f38c803d66a0f717be6d19c7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_78o0g"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00152.png-57da1515524ff04315d372ffc83da3b2.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_swowt"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00153.png-d738b612c414c14e7e7516283e150654.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rduj6"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00154.png-98da315e1874595ec74dc0cf75dff49a.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fyhvv"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00155.png-e6beb9b23c0014bf3be4e79b2c7925ca.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4a6ap"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00156.png-ebfa590995f6f0effff28eaa64f22962.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nw0m6"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00157.png-a6b529f4c8d7478cf116a964d89b84ba.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qbnlw"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00158.png-03ba428f9e5c2482883d7b4942b2b9d1.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t6lnf"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00159.png-58695b2122bce8e3b729a028e208f5c9.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_47sro"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00160.png-5de759f78d612a1c8bc1eae3e0fef0db.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8qlun"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00161.png-3a22d5603d7ce57e43dece649c651841.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gf5ac"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00162.png-9f574afb9a797aa210ebf9ac55343911.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_turkx"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00163.png-0d325351769ad7e48bcd6dfcf90fed9b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pkldg"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00164.png-7f01562384940f492a0df4688b5321df.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mqgye"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00165.png-e28611e4499537ead1d4615757389dbf.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_057x4"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00166.png-a161279fd165c91a330774520a7d6d36.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jwv3k"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00167.png-a2fda84900691fc88c954a0dfec94f4b.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_inv3t"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00168.png-dd85b785fca3c803112de30472c52e75.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8djxq"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00169.png-2a30d18b3ba7c7c230109912bff3ac77.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mbfqs"]
-load_path = "res://.godot/imported/Opening_Scene_W-BG_00170.png-6cf4994659d7843bc892fb8858e613b4.ctex"
+[ext_resource type="Texture2D" uid="uid://cdiv1c3wfr1wb" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00172.png" id="174_iimfh"]
+[ext_resource type="Texture2D" uid="uid://d287vtkpe6q7q" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00173.png" id="175_2ak0g"]
+[ext_resource type="Texture2D" uid="uid://bcnbfpsbdh2ql" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00174.png" id="176_5vdmc"]
+[ext_resource type="Texture2D" uid="uid://cq1gvau4cwww3" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00175.png" id="177_yqwq6"]
+[ext_resource type="Texture2D" uid="uid://dgjcguej76mpd" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00176.png" id="178_ddxan"]
+[ext_resource type="Texture2D" uid="uid://brmiesbfg1ar8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00177.png" id="179_0einf"]
+[ext_resource type="Texture2D" uid="uid://dw8qf7aqpj4bu" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00178.png" id="180_qmdxc"]
+[ext_resource type="Texture2D" uid="uid://dibgmjo7gifd6" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00179.png" id="181_4qay1"]
+[ext_resource type="Texture2D" uid="uid://bjmxvyxiaafbk" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00180.png" id="182_gdnw6"]
+[ext_resource type="Texture2D" uid="uid://bhdxvfg478hcc" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00181.png" id="183_akdwq"]
+[ext_resource type="Texture2D" uid="uid://58rsgm1ihnpr" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00182.png" id="184_6dic6"]
+[ext_resource type="Texture2D" uid="uid://du8lputgmc3ml" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00183.png" id="185_lg40p"]
+[ext_resource type="Texture2D" uid="uid://832gd3dy7qb3" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00184.png" id="186_xcht6"]
+[ext_resource type="Texture2D" uid="uid://dcxos0ww6t74s" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00185.png" id="187_o2sxl"]
+[ext_resource type="Texture2D" uid="uid://tjnni1nvpk83" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00186.png" id="188_mvkn5"]
+[ext_resource type="Texture2D" uid="uid://ph02eo1jwt43" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00187.png" id="189_i0pa1"]
+[ext_resource type="Texture2D" uid="uid://stf44djgkp5g" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00188.png" id="190_ggbvy"]
+[ext_resource type="Texture2D" uid="uid://cl3337rpex7l5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00189.png" id="191_iiynd"]
+[ext_resource type="Texture2D" uid="uid://bewc6dd0jnhtb" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00190.png" id="192_lce4l"]
+[ext_resource type="Texture2D" uid="uid://lopd72esfwua" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00191.png" id="193_uyk66"]
+[ext_resource type="Texture2D" uid="uid://x1y6268egjga" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00192.png" id="194_3ir52"]
+[ext_resource type="Texture2D" uid="uid://b2s5etsw262pe" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00193.png" id="195_vmi7j"]
+[ext_resource type="Texture2D" uid="uid://br06hn2myb8sl" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00194.png" id="196_0bps3"]
+[ext_resource type="Texture2D" uid="uid://dl13vye41mfqy" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00195.png" id="197_gk522"]
+[ext_resource type="Texture2D" uid="uid://cq3hhoxxfprjr" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00196.png" id="198_frqh5"]
+[ext_resource type="Texture2D" uid="uid://cy1kmmipj6o5k" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00197.png" id="199_rws5s"]
+[ext_resource type="Texture2D" uid="uid://ddnyl53gvw8cm" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00198.png" id="200_frh6j"]
+[ext_resource type="Texture2D" uid="uid://uoshrcnpiar7" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00199.png" id="201_g8fqd"]
+[ext_resource type="Texture2D" uid="uid://g65h8roisfjn" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00200.png" id="202_t60fx"]
+[ext_resource type="Texture2D" uid="uid://cnptl6tutcxyk" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00201.png" id="203_yl8mg"]
+[ext_resource type="Texture2D" uid="uid://dshp25bchtmm1" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00202.png" id="204_hhtc8"]
+[ext_resource type="Texture2D" uid="uid://cif3jgclsgy2a" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00203.png" id="205_wtbxn"]
+[ext_resource type="Texture2D" uid="uid://dpxxev2f1i8ec" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00204.png" id="206_26xsp"]
+[ext_resource type="Texture2D" uid="uid://cqs86iqq8be2c" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00205.png" id="207_c7h5v"]
+[ext_resource type="Texture2D" uid="uid://cpyldmlfid76n" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00206.png" id="208_0gybb"]
+[ext_resource type="Texture2D" uid="uid://co0fpxe17tfr1" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00207.png" id="209_om7wd"]
+[ext_resource type="Texture2D" uid="uid://qtln2qyrss36" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00208.png" id="210_0p7be"]
+[ext_resource type="Texture2D" uid="uid://cnsuod2ts6oc4" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00209.png" id="211_8ks8a"]
+[ext_resource type="Texture2D" uid="uid://dsq1hs8ahpnqq" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00210.png" id="212_qxwcb"]
+[ext_resource type="Texture2D" uid="uid://dgphyb45tesxs" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00211.png" id="213_rw0cs"]
+[ext_resource type="Texture2D" uid="uid://by8d7hki30r0l" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00212.png" id="214_ys25d"]
+[ext_resource type="Texture2D" uid="uid://dbspf57j4e1ap" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00213.png" id="215_gwexb"]
+[ext_resource type="Texture2D" uid="uid://bjthh7sunroxq" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00214.png" id="216_r6dik"]
+[ext_resource type="Texture2D" uid="uid://20c37isx3thk" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00215.png" id="217_a0fom"]
+[ext_resource type="Texture2D" uid="uid://cfoixwnq2pfby" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00216.png" id="218_md51u"]
+[ext_resource type="Texture2D" uid="uid://c5r2d1hru00mu" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00217.png" id="219_005vi"]
+[ext_resource type="Texture2D" uid="uid://b5fbhvchus5tu" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00218.png" id="220_bdqlh"]
+[ext_resource type="Texture2D" uid="uid://cjvajegfxejru" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00219.png" id="221_0a8rj"]
+[ext_resource type="Texture2D" uid="uid://cwapwffwxumf5" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00220.png" id="222_aeg4b"]
+[ext_resource type="Texture2D" uid="uid://cc85qvfes7ulo" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00221.png" id="223_1qm55"]
+[ext_resource type="Texture2D" uid="uid://bie5w7rfmi0y8" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00222.png" id="224_mouph"]
+[ext_resource type="Texture2D" uid="uid://db41fl33n7a4l" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00223.png" id="225_348ra"]
+[ext_resource type="Texture2D" uid="uid://bjorpnddpfs65" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00224.png" id="226_8wbup"]
+[ext_resource type="Texture2D" uid="uid://fdwt61u7phus" path="res://assets/Opening_Scene_v2/Opening_Scene_v2_00225.png" id="227_cdjes"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_68loo"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ubpmq")
+"texture": ExtResource("2_e8jy2")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_0xksn")
+"texture": ExtResource("3_40nhu")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_3qdyc")
+"texture": ExtResource("4_jyh8n")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_b55bh")
+"texture": ExtResource("5_1rtcg")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_owmjp")
+"texture": ExtResource("6_j8cbp")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_a31na")
+"texture": ExtResource("7_hw7q7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_l6oia")
+"texture": ExtResource("8_438tc")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_6kgdf")
+"texture": ExtResource("9_02nov")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8nerp")
+"texture": ExtResource("10_gqraa")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_b5e00")
+"texture": ExtResource("11_sr6dn")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_5ys0n")
+"texture": ExtResource("12_6t4r8")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_qda2f")
+"texture": ExtResource("13_pvjk4")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jk47a")
+"texture": ExtResource("14_7srpq")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_v863q")
+"texture": ExtResource("15_n6u5f")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_38bm5")
+"texture": ExtResource("16_o5oov")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jqe2l")
+"texture": ExtResource("17_ciy7s")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_o7kgj")
+"texture": ExtResource("18_h5nqd")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jrtro")
+"texture": ExtResource("19_rtsaq")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_3co86")
+"texture": ExtResource("20_yut5m")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_2ls3p")
+"texture": ExtResource("21_6uvbd")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_v2upc")
+"texture": ExtResource("22_sx1kb")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_lw5b8")
+"texture": ExtResource("23_lhm5j")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ccm1k")
+"texture": ExtResource("24_1j468")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_nh0m5")
+"texture": ExtResource("25_kaotn")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_n6tmu")
+"texture": ExtResource("26_euf8k")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_eqead")
+"texture": ExtResource("27_ydc5r")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_yr6hw")
+"texture": ExtResource("28_qswdp")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_cp1q6")
+"texture": ExtResource("29_magw8")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_t7u43")
+"texture": ExtResource("30_80yqh")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_6x2yd")
+"texture": ExtResource("31_msdmu")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_t2psj")
+"texture": ExtResource("32_t1hbq")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_vbcu2")
+"texture": ExtResource("33_n3mxt")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_vi2xy")
+"texture": ExtResource("34_7ch3a")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_2oi5y")
+"texture": ExtResource("35_m7kma")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_5l4w3")
+"texture": ExtResource("36_vd2fy")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ad5qy")
+"texture": ExtResource("37_783y7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mj0uy")
+"texture": ExtResource("38_bugex")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_hve1b")
+"texture": ExtResource("39_bhxq1")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_bsuqg")
+"texture": ExtResource("40_0dsbo")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_leidr")
+"texture": ExtResource("41_xqct7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_p5scj")
+"texture": ExtResource("42_eryua")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_byj4a")
+"texture": ExtResource("43_gx566")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_6r0w4")
+"texture": ExtResource("44_tqlgi")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_xoyqg")
+"texture": ExtResource("45_jj040")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_06c8w")
+"texture": ExtResource("46_4657e")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_72gpq")
+"texture": ExtResource("47_c18dd")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_bypoc")
+"texture": ExtResource("48_q3ylw")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ittnf")
+"texture": ExtResource("49_twxuk")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_cj13d")
+"texture": ExtResource("50_umj1c")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_7fe6y")
+"texture": ExtResource("51_lsvxc")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_hf5kn")
+"texture": ExtResource("52_y8xw4")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ejgrh")
+"texture": ExtResource("53_8nmc3")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_68p65")
+"texture": ExtResource("54_0j7vl")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_x1o48")
+"texture": ExtResource("55_dcn7t")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4brdy")
+"texture": ExtResource("56_vav8x")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_tlopo")
+"texture": ExtResource("57_t5fgi")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_sql22")
+"texture": ExtResource("58_6mvgy")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_woe4s")
+"texture": ExtResource("59_n2lpi")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ke6q3")
+"texture": ExtResource("60_1iefu")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jegry")
+"texture": ExtResource("61_jph3y")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_fpyj4")
+"texture": ExtResource("62_jo2on")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_dbx4g")
+"texture": ExtResource("63_k0usb")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_oltg7")
+"texture": ExtResource("64_2ik84")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mtr0r")
+"texture": ExtResource("65_ifku1")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_cuv0g")
+"texture": ExtResource("66_xr7if")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_kjiyg")
+"texture": ExtResource("67_qx4qm")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_k64h6")
+"texture": ExtResource("68_itlaf")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_m35oq")
+"texture": ExtResource("69_e13j7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ja6au")
+"texture": ExtResource("70_vatgi")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_oq2d8")
+"texture": ExtResource("71_m3ov7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_j8e8g")
+"texture": ExtResource("72_fa6j8")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_wqr27")
+"texture": ExtResource("73_sh5tv")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_bvnfo")
+"texture": ExtResource("74_p7hp0")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_f01ha")
+"texture": ExtResource("75_0r367")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_irv0f")
+"texture": ExtResource("76_6xvsl")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_qp853")
+"texture": ExtResource("77_a0kf1")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8euy1")
+"texture": ExtResource("78_cqbxb")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_rttdg")
+"texture": ExtResource("79_okk8f")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_evk81")
+"texture": ExtResource("80_g6a8q")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_vxfym")
+"texture": ExtResource("81_071au")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_e74bv")
+"texture": ExtResource("82_020xn")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_yni57")
+"texture": ExtResource("83_5q632")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_845ni")
+"texture": ExtResource("84_ngd2l")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_pj76v")
+"texture": ExtResource("85_d0b8d")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_esyft")
+"texture": ExtResource("86_ooe28")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jjys6")
+"texture": ExtResource("87_jx7y0")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_3r6co")
+"texture": ExtResource("88_wbmjo")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4nsdp")
+"texture": ExtResource("89_va6bd")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_rmldd")
+"texture": ExtResource("90_l2xpr")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_sdgeg")
+"texture": ExtResource("91_fbmcr")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_k660s")
+"texture": ExtResource("92_06yym")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_6xfgv")
+"texture": ExtResource("93_87new")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_v281b")
+"texture": ExtResource("94_687fc")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_dgxwe")
+"texture": ExtResource("95_l12j7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ol5k6")
+"texture": ExtResource("96_gfhp3")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_u63m7")
+"texture": ExtResource("97_1kr8v")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ec4mf")
+"texture": ExtResource("98_rrp17")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_cbfsg")
+"texture": ExtResource("99_ga4me")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4jee1")
+"texture": ExtResource("100_gm3rj")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_0mhbf")
+"texture": ExtResource("101_m4qqk")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_30vyq")
+"texture": ExtResource("102_aov0r")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8yg7p")
+"texture": ExtResource("103_kpy7y")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8ufxu")
+"texture": ExtResource("104_3nn83")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_txmli")
+"texture": ExtResource("105_gcjkx")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_m41mb")
+"texture": ExtResource("106_yt6rk")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mjnic")
+"texture": ExtResource("107_7ug4o")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_r1eoq")
+"texture": ExtResource("108_uga5f")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_r3oe0")
+"texture": ExtResource("109_xibo8")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_fe1th")
+"texture": ExtResource("110_fae03")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_64fcb")
+"texture": ExtResource("111_nfpu2")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_wtmm7")
+"texture": ExtResource("112_s16xx")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_47f5p")
+"texture": ExtResource("113_yymj3")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jj2fe")
+"texture": ExtResource("114_yuogo")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_0vrll")
+"texture": ExtResource("115_71roy")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_0j6v7")
+"texture": ExtResource("116_k6cff")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_78b81")
+"texture": ExtResource("117_qtjor")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mnvsn")
+"texture": ExtResource("118_cfe1o")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ncks5")
+"texture": ExtResource("119_54dpn")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_e5gap")
+"texture": ExtResource("120_kdif1")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ac3gy")
+"texture": ExtResource("121_3p3hg")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_n6l04")
+"texture": ExtResource("122_nfmqo")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ouxjv")
+"texture": ExtResource("123_kika7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_byapy")
+"texture": ExtResource("124_wd3ak")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_7qyeo")
+"texture": ExtResource("125_m7yl3")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_lv1je")
+"texture": ExtResource("126_gr67f")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_6s77a")
+"texture": ExtResource("127_nuodt")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_nqs3g")
+"texture": ExtResource("128_yof8r")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_7s3cs")
+"texture": ExtResource("129_jvh2c")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4gtdn")
+"texture": ExtResource("130_clu2v")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_o41be")
+"texture": ExtResource("131_lychq")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_vcyy5")
+"texture": ExtResource("132_d8iv8")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_k6tah")
+"texture": ExtResource("133_nudxv")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_boylf")
+"texture": ExtResource("134_3lloa")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_rtxxw")
+"texture": ExtResource("135_0u41u")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_e4isn")
+"texture": ExtResource("136_hdtv0")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_pt213")
+"texture": ExtResource("137_idq7e")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_xa53s")
+"texture": ExtResource("138_l34dm")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_pofob")
+"texture": ExtResource("139_ht6ue")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_0bngs")
+"texture": ExtResource("140_60bmc")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_skqfi")
+"texture": ExtResource("141_7rk1d")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4dtgv")
+"texture": ExtResource("142_8xnod")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_1csen")
+"texture": ExtResource("143_u6y0t")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_kkis7")
+"texture": ExtResource("144_jue0q")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_sv0ei")
+"texture": ExtResource("145_58chu")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_uiped")
+"texture": ExtResource("146_7ro8n")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_opp50")
+"texture": ExtResource("147_87fdi")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_dlyp2")
+"texture": ExtResource("148_jib0r")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_7ugp4")
+"texture": ExtResource("149_6sgv7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_rduih")
+"texture": ExtResource("150_cw00l")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_oxsp2")
+"texture": ExtResource("151_cs3mk")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ffabu")
+"texture": ExtResource("152_65fu0")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_qa7k8")
+"texture": ExtResource("153_aces7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_78o0g")
+"texture": ExtResource("154_cyef5")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_swowt")
+"texture": ExtResource("155_bo2ut")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_rduj6")
+"texture": ExtResource("156_h1ro4")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_fyhvv")
+"texture": ExtResource("157_tww7f")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4a6ap")
+"texture": ExtResource("158_a4g1i")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_nw0m6")
+"texture": ExtResource("159_wkc62")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_qbnlw")
+"texture": ExtResource("160_1wedt")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_t6lnf")
+"texture": ExtResource("161_e2ald")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_47sro")
+"texture": ExtResource("162_puoug")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8qlun")
+"texture": ExtResource("163_u3tw1")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_gf5ac")
+"texture": ExtResource("164_sm8n2")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_turkx")
+"texture": ExtResource("165_4c8qb")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_pkldg")
+"texture": ExtResource("166_urvx8")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mqgye")
+"texture": ExtResource("167_x4cuh")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_057x4")
+"texture": ExtResource("168_eio6j")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_jwv3k")
+"texture": ExtResource("169_40n4a")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_inv3t")
+"texture": ExtResource("170_58p3v")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8djxq")
+"texture": ExtResource("171_32de7")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mbfqs")
+"texture": ExtResource("172_x00jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_3kqp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_iimfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_2ak0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_5vdmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_yqwq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_ddxan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_0einf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_qmdxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_4qay1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_gdnw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_akdwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_6dic6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_lg40p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_xcht6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_o2sxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_mvkn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_i0pa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_ggbvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_iiynd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_lce4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_uyk66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_3ir52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_vmi7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_0bps3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_gk522")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_frqh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_rws5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_frh6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_g8fqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_t60fx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_yl8mg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_hhtc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_wtbxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_26xsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_c7h5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_0gybb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_om7wd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_0p7be")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_8ks8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_qxwcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_rw0cs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_ys25d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_gwexb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_r6dik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_a0fom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_md51u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_005vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_bdqlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("221_0a8rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_aeg4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_1qm55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_mouph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_348ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_8wbup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_cdjes")
 }],
 "loop": false,
 "name": &"default",
@@ -1087,6 +965,7 @@ sprite_frames = SubResource("SpriteFrames_68loo")
 autoplay = "default"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(-627, -306)
 texture = ExtResource("173_6mrcp")
 
