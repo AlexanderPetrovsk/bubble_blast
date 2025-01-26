@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=3 uid="uid://cngg0y3pn3u2t"]
+[gd_scene load_steps=105 format=3 uid="uid://bagdl8p276lsp"]
 
 [ext_resource type="Texture2D" uid="uid://7d6y8r0uu7l6" path="res://assets/Snake/Snake_00000.png" id="1_bcl3u"]
 [ext_resource type="Script" path="res://scripts/snake.gd" id="1_n1tlj"]
@@ -440,11 +440,7 @@ shape = SubResource("RectangleShape2D_ch4d6")
 position = Vector2(83, -135)
 shape = SubResource("CircleShape2D_2otel")
 
-[node name="TreeShakeTimer" type="Timer" parent="."]
-wait_time = 0.5
-
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
 [connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
 [connection signal="body_entered" from="Show" to="." method="_on_show_body_entered"]
-[connection signal="timeout" from="TreeShakeTimer" to="." method="_on_tree_shake_timer_timeout"]

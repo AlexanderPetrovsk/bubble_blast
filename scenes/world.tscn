@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://cumo2r4785328"]
+[gd_scene load_steps=17 format=3 uid="uid://cumo2r4785328"]
 
 [ext_resource type="PackedScene" uid="uid://c8vehcx4sscax" path="res://scenes/environment.tscn" id="1_b3wb2"]
 [ext_resource type="PackedScene" uid="uid://djb3td85854b3" path="res://scenes/start_game.tscn" id="1_hvjs3"]
 [ext_resource type="PackedScene" uid="uid://b3rclhr4o1a37" path="res://scenes/bubble.tscn" id="1_ii5wx"]
 [ext_resource type="Script" path="res://scripts/camera.gd" id="1_yfg22"]
-[ext_resource type="PackedScene" uid="uid://bncokuaogq3b1" path="res://scenes/sun.tscn" id="3_r334t"]
+[ext_resource type="PackedScene" path="res://scenes/sun.tscn" id="3_r334t"]
 [ext_resource type="PackedScene" uid="uid://fribl7odesvw" path="res://scenes/environment/animated/bird.tscn" id="4_suwhn"]
 [ext_resource type="Script" path="res://scripts/bird.gd" id="5_xld5y"]
 [ext_resource type="PackedScene" uid="uid://clbaynpvg3vj4" path="res://scenes/death_scene.tscn" id="8_oyiy6"]
@@ -14,6 +14,8 @@
 [ext_resource type="AudioStream" uid="uid://c4gmxnvady2kp" path="res://assets/Audio/SFX/Spell of Bubbles.wav" id="14_jiv1w"]
 [ext_resource type="AudioStream" uid="uid://b25u7g5feq2lq" path="res://assets/Audio/SFX/Bubble 03.wav" id="14_yfy6x"]
 [ext_resource type="AudioStream" uid="uid://ctk26oqw1vv2q" path="res://assets/Audio/SFX/Bubble 04.wav" id="15_mkmho"]
+[ext_resource type="AudioStream" uid="uid://d2n64r4nsxv4y" path="res://assets/Audio/SFX/snake.wav" id="15_nkvg5"]
+[ext_resource type="AudioStream" uid="uid://xsxweu3bqtwc" path="res://assets/Audio/SFX/BirdCondor 6044_89_1.wav" id="16_yeyn4"]
 
 [node name="root" type="Node2D"]
 scale = Vector2(0.999402, 1)
@@ -81,3 +83,9 @@ stream = ExtResource("13_vlceo")
 
 [node name="death" type="AudioStreamPlayer" parent="sounds"]
 stream = ExtResource("14_jiv1w")
+
+[node name="snake_sound" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("15_nkvg5")
+
+[node name="bird_sound" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("16_yeyn4")
